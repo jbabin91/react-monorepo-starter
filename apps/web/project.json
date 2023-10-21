@@ -1,16 +1,11 @@
 {
-  "name": "web",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/web/src",
+  "name": "web",
   "projectType": "application",
+  "sourceRoot": "apps/web/src",
+  "tags": ["web"],
   "targets": {
     "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "outputPath": "dist/apps/web"
-      },
       "configurations": {
         "development": {
           "mode": "development"
@@ -18,14 +13,37 @@
         "production": {
           "mode": "production"
         }
+      },
+      "defaultConfiguration": "production",
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/web"
+      },
+      "outputs": ["{options.outputPath}"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["apps/web/**/*.{ts,tsx,js,jsx}"]
+      },
+      "outputs": ["{options.outputFile}"]
+    },
+    "preview": {
+      "configurations": {
+        "development": {
+          "buildTarget": "web:build:development"
+        },
+        "production": {
+          "buildTarget": "web:build:production"
+        }
+      },
+      "defaultConfiguration": "development",
+      "executor": "@nx/vite:preview-server",
+      "options": {
+        "buildTarget": "web:build"
       }
     },
     "serve": {
-      "executor": "@nx/vite:dev-server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "web:build"
-      },
       "configurations": {
         "development": {
           "buildTarget": "web:build:development",
@@ -35,38 +53,20 @@
           "buildTarget": "web:build:production",
           "hmr": false
         }
-      }
-    },
-    "preview": {
-      "executor": "@nx/vite:preview-server",
+      },
       "defaultConfiguration": "development",
+      "executor": "@nx/vite:dev-server",
       "options": {
         "buildTarget": "web:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "web:build:development"
-        },
-        "production": {
-          "buildTarget": "web:build:production"
-        }
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["{options.reportsDirectory}"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../coverage/apps/web"
-      }
-    },
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["apps/web/**/*.{ts,tsx,js,jsx}"]
-      }
+      },
+      "outputs": ["{options.reportsDirectory}"]
     }
-  },
-  "tags": []
+  }
 }
