@@ -7,6 +7,8 @@
     "build": "nx build web",
     "build:android": "nx build-android demo-app",
     "build:ios": "nx build-ios demo-app",
+    "bundle:android": "nx bundle-android demo-app",
+    "bundle:ios": "nx bundle-ios demo-app",
     "dev": "nx serve web",
     "dev:android": "nx run-android demo-app",
     "dev:ios": "nx run-ios demo-app",
