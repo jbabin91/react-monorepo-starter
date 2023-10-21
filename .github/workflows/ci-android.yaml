@@ -1,0 +1,19 @@
+name: CI Android
+
+on:
+  workflow_dispatch: # Manually trigger workflow
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source code
+        uses: actions/checkout@v4
+      - name: PNPM Install
+        uses: ./.github/actions/pnpm-install
+      - name: Branch Checks
+        uses: ./.github/actions/branch-checks
+      - name: Build Android App
+        run: pnpm build:android
+      - name: Bundle Android App
+        run: pnpm bundle:android

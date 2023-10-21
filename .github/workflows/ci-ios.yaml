@@ -1,0 +1,19 @@
+name: CI iOS
+
+on:
+  workflow_dispatch: # Manually trigger workflow
+
+jobs:
+  CI:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Source code
+        uses: actions/checkout@v4
+      - name: PNPM Install
+        uses: ./.github/actions/pnpm-install
+      - name: Branch Checks
+        uses: ./.github/actions/branch-checks
+      - name: Build iOS App
+        run: pnpm build:ios
+      - name: Bundle iOS App
+        run: pnpm bundle:ios
