@@ -1,7 +1,7 @@
-name: CI (Continuous Integration)
+name: CI Android
 
 on:
-  push:
+  workflow_dispatch: # Manually trigger workflow
 
 jobs:
   CI:
@@ -13,5 +13,7 @@ jobs:
         uses: ./.github/actions/pnpm-install
       - name: Branch Checks
         uses: ./.github/actions/branch-checks
-      - name: Build Web App
-        uses: ./.github/actions/build-web-app
+      - name: Build Android App
+        run: pnpm build:android
+      - name: Bundle Android App
+        run: pnpm bundle:android
