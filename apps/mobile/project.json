@@ -1,0 +1,86 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "demo-app",
+  "projectType": "application",
+  "sourceRoot": "apps/mobile/src",
+  "tags": ["mobile"],
+  "targets": {
+    "build-android": {
+      "dependsOn": ["ensure-symlink", "sync-deps"],
+      "executor": "@nx/react-native:build-android",
+      "options": {},
+      "outputs": [
+        "{projectRoot}/android/app/build/outputs/bundle",
+        "{projectRoot}/android/app/build/outputs/apk"
+      ]
+    },
+    "build-ios": {
+      "dependsOn": ["ensure-symlink", "sync-deps", "pod-install"],
+      "executor": "@nx/react-native:build-ios",
+      "options": {},
+      "outputs": ["{projectRoot}/ios/build/Build"]
+    },
+    "bundle-android": {
+      "dependsOn": ["ensure-symlink"],
+      "executor": "@nx/react-native:bundle",
+      "options": {
+        "bundleOutput": "dist/apps/mobile/android/main.jsbundle",
+        "entryFile": "src/main.tsx",
+        "platform": "android"
+      },
+      "outputs": ["{options.bundleOutput}"]
+    },
+    "bundle-ios": {
+      "dependsOn": ["ensure-symlink"],
+      "executor": "@nx/react-native:bundle",
+      "options": {
+        "bundleOutput": "dist/apps/mobile/ios/main.jsbundle",
+        "entryFile": "src/main.tsx",
+        "platform": "ios"
+      },
+      "outputs": ["{options.bundleOutput}"]
+    },
+    "ensure-symlink": {
+      "executor": "@nx/react-native:ensure-symlink",
+      "options": {}
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["apps/mobile/**/*.{ts,tsx,js,jsx}"]
+      },
+      "outputs": ["{options.outputFile}"]
+    },
+    "pod-install": {
+      "executor": "@nx/react-native:pod-install",
+      "options": {}
+    },
+    "run-android": {
+      "dependsOn": ["ensure-symlink", "sync-deps"],
+      "executor": "@nx/react-native:run-android",
+      "options": {}
+    },
+    "run-ios": {
+      "dependsOn": ["ensure-symlink", "sync-deps", "pod-install"],
+      "executor": "@nx/react-native:run-ios",
+      "options": {}
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx start demo-app"
+      }
+    },
+    "start": {
+      "dependsOn": ["ensure-symlink", "sync-deps", "pod-install"],
+      "executor": "@nx/react-native:start",
+      "options": {
+        "port": 8081
+      }
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps",
+      "options": {}
+    }
+  }
+}
