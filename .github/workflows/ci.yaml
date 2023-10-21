@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  CI:
+  branch-checks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Source code
@@ -13,5 +13,36 @@ jobs:
         uses: ./.github/actions/pnpm-install
       - name: Branch Checks
         uses: ./.github/actions/branch-checks
+
+  web-build:
+    needs: branch-checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source code
+        uses: actions/checkout@v4
+      - name: PNPM Install
+        uses: ./.github/actions/pnpm-install
       - name: Build Web App
         uses: ./.github/actions/build-web-app
+
+  ios-build:
+    needs: branch-checks
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Source code
+        uses: actions/checkout@v4
+      - name: PNPM Install
+        uses: ./.github/actions/pnpm-install
+      - name: Build iOS App
+        run: pnpm build:ios
+
+  android-build:
+    needs: branch-checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source code
+        uses: actions/checkout@v4
+      - name: PNPM Install
+        uses: ./.github/actions/pnpm-install
+      - name: Build Android App
+        run: pnpm build:android
