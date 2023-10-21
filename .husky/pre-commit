@@ -20,5 +20,4 @@
 # echo ">> Finish checking branch name"
 # echo ">> Linting your files and fixing them if needed..."
 
-exec < /dev/tty && npx cz --hook || true
 npx --no-install lint-staged
