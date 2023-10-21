@@ -1,0 +1,10 @@
+name: Build Web App
+description: Action to build the web applications
+
+runs:
+  using: composite
+  steps:
+    - name: Build Web App
+      shell: bash
+      run: |
+        pnpm build --skip-nx-cache
