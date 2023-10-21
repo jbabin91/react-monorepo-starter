@@ -13,6 +13,11 @@
     "lint:fix": "nx run-many -t lint -- --fix",
     "prepare": "is-ci || husky install"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "lint-staged": {
     "*": [
       "prettier -uw",
@@ -31,6 +36,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
     "@nx/cypress": "17.0.1",
     "@nx/devkit": "17.0.1",
     "@nx/eslint": "17.0.1",
