@@ -1,6 +1,6 @@
 {
   "name": "@jbabin91/web-theme",
-  "version": "1.1.0-rc.3",
+  "version": "1.0.1-alpha.0",
   "repository": "https://github.com/jbabin91/react-monorepo-starter/tree/dev/packages/web-theme",
   "license": "MIT",
   "main": "./index.js",
