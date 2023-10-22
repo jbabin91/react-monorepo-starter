@@ -1,3 +1,10 @@
+## [1.1.0-rc.3](https://github.com/jbabin91/react-monorepo-starter/compare/web-theme-1.1.0-rc.2...web-theme-1.1.0-rc.3) (2023-10-22)
+
+
+### Features
+
+* add lerna to project ([3871e6f](https://github.com/jbabin91/react-monorepo-starter/commit/3871e6fb79ae51d59e0c2d47f6749cf98e41d6c5))
+
 ## [1.1.0-rc.2](https://github.com/jbabin91/react-monorepo-starter/compare/web-theme-1.1.0-rc.1...web-theme-1.1.0-rc.2) (2023-10-22)
 
 
