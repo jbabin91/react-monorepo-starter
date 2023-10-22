@@ -3,5 +3,5 @@
   "changelog": true,
   "github": true,
   "npm": true,
-  "repositoryUrl": "https://github.com/jbabin91/react-monorepo-starter"
+  "repositoryUrl": "https://github.com/jbabin91/react-monorepo-starter.git"
 }
