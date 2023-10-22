@@ -121,5 +121,10 @@
   "packageManager": "pnpm@8.9.2",
   "nx": {
     "includedScripts": []
+  },
+  "pnpm": {
+    "overrides": {
+      "semver@>=7.0.0 <7.5.2": ">=7.5.2"
+    }
   }
 }
