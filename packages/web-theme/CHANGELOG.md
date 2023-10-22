@@ -1,3 +1,10 @@
+## [1.1.0-rc.2](https://github.com/jbabin91/react-monorepo-starter/compare/web-theme-1.1.0-rc.1...web-theme-1.1.0-rc.2) (2023-10-22)
+
+
+### Features
+
+* init theme for web apps ([9db1f02](https://github.com/jbabin91/react-monorepo-starter/commit/9db1f0227a4a91ffb9f8acecac484e9b03bb1e93))
+
 ## [1.1.0-rc.1](https://github.com/jbabin91/react-monorepo-starter/compare/web-theme-v1.0.0...web-theme-1.1.0-rc.1) (2023-10-22)
 
 ### Features
