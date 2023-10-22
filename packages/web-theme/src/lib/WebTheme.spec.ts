@@ -1,7 +1,7 @@
-import { WebTheme } from './WebTheme';
+import { WebThemeTestFunction } from './WebTheme';
 
 describe('webTheme', () => {
   it('should work', () => {
-    expect(WebTheme()).toEqual('web-theme');
+    expect(WebThemeTestFunction()).toEqual('web-theme');
   });
 });

@@ -1,19 +1,16 @@
 ## [1.1.0-rc.1](https://github.com/jbabin91/react-monorepo-starter/compare/web-theme-v1.0.0...web-theme-1.1.0-rc.1) (2023-10-22)
 
-
 ### Features
 
-* created a new release workflow ([f70ea98](https://github.com/jbabin91/react-monorepo-starter/commit/f70ea98ab9b7dde8e6a2f442893f98f3dd6bea7a))
-
+- created a new release workflow ([f70ea98](https://github.com/jbabin91/react-monorepo-starter/commit/f70ea98ab9b7dde8e6a2f442893f98f3dd6bea7a))
 
 ### Bug Fixes
 
-* patch semver package (audit) ([805e626](https://github.com/jbabin91/react-monorepo-starter/commit/805e6262878c69ba44359f9c50a277b6cabaf23b))
-
+- patch semver package (audit) ([805e626](https://github.com/jbabin91/react-monorepo-starter/commit/805e6262878c69ba44359f9c50a277b6cabaf23b))
 
 ### Refactors
 
-* update web-theme package ([bf68c46](https://github.com/jbabin91/react-monorepo-starter/commit/bf68c46edda1e3cde44cb7c84c39608eb3e5158c))
+- update web-theme package ([bf68c46](https://github.com/jbabin91/react-monorepo-starter/commit/bf68c46edda1e3cde44cb7c84c39608eb3e5158c))
 
 # 1.0.0 (2023-10-22)
 

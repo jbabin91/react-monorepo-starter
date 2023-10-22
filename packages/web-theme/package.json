@@ -6,7 +6,9 @@
   "main": "./index.js",
   "module": "./index.mjs",
   "typings": "./index.d.ts",
-  "dependencies": {},
+  "dependencies": {
+    "@mui/material": "*"
+  },
   "publishConfig": {
     "access": "public"
   }
