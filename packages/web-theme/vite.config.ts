@@ -1,0 +1,46 @@
+/// <reference types='vitest' />
+import * as path from 'node:path';
+
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
+
+export default defineConfig({
+  // Configuration for building your library.
+  // See: https://vitejs.dev/guide/build.html#library-mode
+  build: {
+    lib: {
+      // Could also be a dictionary or array of multiple entry points.
+      entry: 'src/index.ts',
+      fileName: 'index',
+      // Change this to the formats you want to support.
+      // Don't forget to update your package.json as well.
+      formats: ['es', 'cjs'],
+      name: 'web-theme',
+    },
+    rollupOptions: {
+      // External packages that should not be bundled into your library.
+      external: [],
+    },
+  },
+  cacheDir: '../../node_modules/.vite/web-theme',
+  plugins: [
+    nxViteTsPaths(),
+    dts({
+      entryRoot: 'src',
+      skipDiagnostics: true,
+      tsConfigFilePath: path.join(__dirname, 'tsconfig.lib.json'),
+    }),
+  ],
+  test: {
+    cache: {
+      dir: '../../node_modules/.vitest',
+    },
+    coverage: {
+      provider: 'v8',
+    },
+    environment: 'jsdom',
+    globals: true,
+    include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+  },
+});

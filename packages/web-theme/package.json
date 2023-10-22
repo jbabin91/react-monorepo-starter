@@ -1,0 +1,24 @@
+{
+  "name": "@jbabin91/web-theme",
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbabin91/react-monorepo-starter"
+  },
+  "author": {
+    "name": "Jace Babin",
+    "email": "jbabin91@gmail.com"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "typings": "./index.d.ts",
+  "dependencies": {},
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
