@@ -18,7 +18,7 @@ module.exports = {
     },
     {
       channel: 'next',
-      name: 'next',
+      name: 'dev',
       prerelease: 'rc',
     },
     {
