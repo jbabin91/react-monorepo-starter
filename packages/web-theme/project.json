@@ -3,7 +3,7 @@
   "name": "web-theme",
   "projectType": "library",
   "sourceRoot": "packages/web-theme/src",
-  "tags": ["web", "ui", "theme"],
+  "tags": ["web", "ui", "theme", "package"],
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
@@ -22,15 +22,8 @@
       },
       "outputs": ["{options.outputFile}"]
     },
-    "publish": {
-      "command": "node tools/scripts/publish.mjs web-theme {args.ver} {args.tag}",
-      "dependsOn": ["build"]
-    },
     "semantic-release": {
-      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
-      "options": {
-        "tagFormat": "web-theme-v${VERSION}"
-      }
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release"
     },
     "test": {
       "executor": "@nx/vite:test",
