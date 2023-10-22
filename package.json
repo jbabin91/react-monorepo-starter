@@ -4,19 +4,24 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "nx build web",
+    "build": "nx run-many -t build",
     "build:android": "nx build-android demo-app",
     "build:ios": "nx build-ios demo-app",
+    "build:web": "nx build web",
     "bundle:android": "nx bundle-android demo-app",
     "bundle:ios": "nx bundle-ios demo-app",
     "dev": "nx serve web",
     "dev:android": "nx run-android demo-app",
     "dev:ios": "nx run-ios demo-app",
+    "e2e": "nx run-many -t e2e",
+    "e2e:ui": "nx run-many -t e2e -- --ui",
     "format": "prettier -uw --cache .",
     "format:check": "prettier -uc --cache .",
     "lint": "nx run-many -t lint",
     "lint:fix": "nx run-many -t lint -- --fix",
-    "prepare": "is-ci || husky install"
+    "prepare": "is-ci || husky install",
+    "test": "nx run-many -t test",
+    "test:coverage": "nx run-many -t test -- --coverage"
   },
   "commitlint": {
     "extends": [
@@ -68,6 +73,7 @@
     "@testing-library/jest-native": "~5.4.3",
     "@testing-library/react": "14.0.0",
     "@testing-library/react-native": "~12.3.0",
+    "@theunderscorer/nx-semantic-release": "^2.6.2",
     "@types/node": "20.8.7",
     "@types/react": "18.2.31",
     "@types/react-dom": "18.2.14",
@@ -104,9 +110,15 @@
     "react-native-svg": "13.14.0",
     "react-native-svg-transformer": "1.1.0",
     "react-test-renderer": "18.2.0",
+    "tslib": "^2.6.2",
     "typescript": "~5.2.2",
+    "verdaccio": "^5.27.0",
     "vite": "~4.5.0",
+    "vite-plugin-dts": "~3.6.0",
     "vitest": "~0.34.6"
   },
-  "packageManager": "pnpm@8.9.2"
+  "packageManager": "pnpm@8.9.2",
+  "nx": {
+    "includedScripts": []
+  }
 }
