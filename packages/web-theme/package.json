@@ -16,7 +16,7 @@
   "typings": "./index.d.ts",
   "dependencies": {},
   "engines": {
-    "node": ">=20"
+    "node": ">=20.8.1"
   },
   "publishConfig": {
     "access": "public"
