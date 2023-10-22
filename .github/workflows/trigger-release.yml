@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # to be able to get the latest tag
-      - uses: nrwl/nx-set-shas@v3
+      - uses: nrwl/nx-set-shas@v4
       - uses: ./.github/actions/pnpm-install
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: pnpm audit
