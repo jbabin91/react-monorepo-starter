@@ -1,7 +1,10 @@
 {
   "name": "@jbabin91/web-theme",
   "version": "1.0.1",
-  "repository": "https://github.com/jbabin91/react-monorepo-starter/tree/dev/packages/web-theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbabin91/react-monorepo-starter.git#dev"
+  },
   "license": "MIT",
   "main": "./index.js",
   "module": "./index.mjs",
