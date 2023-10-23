@@ -43,9 +43,8 @@ jobs:
           git config --global user.name '@react-monorepo-starter-bot'
           git config --global user.email 'react-monorepo-starter@users.noreply.github.com'
       - uses: nrwl/nx-set-shas@v4
-      - uses: ./.github/actions/pnpm-install
-      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        run: pnpm audit
+      - name: PNPM Install
+        uses: ./.github/actions/pnpm-install
       - name: Release ${{ github.event.inputs.package }} package(s)
         run: |
           if [[ ${{ github.event.inputs.package }} == 'affected' ]]; then

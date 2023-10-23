@@ -6,6 +6,7 @@ settings:
 
 overrides:
   semver@>=7.0.0 <7.5.2: '>=7.5.2'
+  tough-cookie@<4.1.3: '>=4.1.3'
 
 importers:
 
@@ -84,9 +85,6 @@ importers:
       '@jscutlery/semver':
         specifier: ^4.0.0
         version: 4.0.0(@nx/devkit@17.0.1)
-      '@nx/cypress':
-        specifier: 17.0.1
-        version: 17.0.1(@swc-node/register@1.6.8)(@swc/core@1.3.94)(@types/node@20.8.7)(eslint@8.52.0)(nx@17.0.1)(typescript@5.2.2)(verdaccio@5.27.0)
       '@nx/devkit':
         specifier: 17.0.1
         version: 17.0.1(nx@17.0.1)
@@ -274,7 +272,7 @@ importers:
         specifier: ~5.2.2
         version: 5.2.2
       verdaccio:
-        specifier: ^5.0.4
+        specifier: ^5.27.0
         version: 5.27.0(typanion@3.14.0)
       vite:
         specifier: ~4.5.0
@@ -2373,7 +2371,7 @@ packages:
       send: 0.18.0
       slugify: 1.6.6
       structured-headers: 0.4.1
-      tar: 6.1.11
+      tar: 6.2.0
       tempy: 0.7.1
       terminal-link: 2.1.1
       text-table: 0.2.0
@@ -2447,7 +2445,7 @@ packages:
       '@expo/metro-config': 0.10.7
       '@expo/osascript': 2.0.33
       '@expo/spawn-async': 1.5.0
-      body-parser: 1.20.1
+      body-parser: 1.20.2
       chalk: 4.1.2
       connect: 3.7.0
       fs-extra: 9.0.0
@@ -2475,7 +2473,7 @@ packages:
       lodash: 4.17.21
       mkdirp: 0.5.6
       password-prompt: 1.1.3
-      rimraf: 2.6.3
+      rimraf: 2.7.1
       sudo-prompt: 8.2.5
       tmp: 0.0.33
       tslib: 2.6.2
@@ -4122,25 +4120,6 @@ packages:
       - supports-color
     dev: true
 
-  /@nrwl/cypress@17.0.1(@swc-node/register@1.6.8)(@swc/core@1.3.94)(@types/node@20.8.7)(eslint@8.52.0)(nx@17.0.1)(typescript@5.2.2)(verdaccio@5.27.0):
-    resolution: {integrity: sha512-13eIoTDcpWAcNAPWnwCdXldx3DHApMnpfrraFTgmeHC8e2WlmPPxAcxSasie2Y6fckyP+Mv9KRENZMhET8Vvxw==}
-    dependencies:
-      '@nx/cypress': 17.0.1(@swc-node/register@1.6.8)(@swc/core@1.3.94)(@types/node@20.8.7)(eslint@8.52.0)(nx@17.0.1)(typescript@5.2.2)(verdaccio@5.27.0)
-    transitivePeerDependencies:
-      - '@babel/traverse'
-      - '@swc-node/register'
-      - '@swc/core'
-      - '@swc/wasm'
-      - '@types/node'
-      - cypress
-      - debug
-      - eslint
-      - nx
-      - supports-color
-      - typescript
-      - verdaccio
-    dev: true
-
   /@nrwl/detox@17.0.1(@swc-node/register@1.6.8)(@swc/core@1.3.94)(@types/node@20.8.7)(detox@20.13.1)(eslint@8.52.0)(nx@17.0.1)(ts-node@10.9.1)(typescript@5.2.2)(verdaccio@5.27.0)(webpack@5.89.0):
     resolution: {integrity: sha512-9s/jvA3HUQ3r54rFLGVm54oCFvcV9NIlLxd/n+flfTKTG1sJ9e4Mf9hF6B2YdXkPi40d96t+owRRyIbcYdi8FA==}
     dependencies:
@@ -4368,36 +4347,6 @@ packages:
       - '@swc-node/register'
       - '@swc/core'
       - debug
-    dev: true
-
-  /@nx/cypress@17.0.1(@swc-node/register@1.6.8)(@swc/core@1.3.94)(@types/node@20.8.7)(eslint@8.52.0)(nx@17.0.1)(typescript@5.2.2)(verdaccio@5.27.0):
-    resolution: {integrity: sha512-Z0f+CBf1uHJHb+cvpb0fpO2iUwidAtGVRqB7NpPKMkWkdGYgbiVrXIS3IkfHlZBKVULBNuqg8ylJKIJ9aoJkRA==}
-    peerDependencies:
-      cypress: '>= 3 < 14'
-    peerDependenciesMeta:
-      cypress:
-        optional: true
-    dependencies:
-      '@nrwl/cypress': 17.0.1(@swc-node/register@1.6.8)(@swc/core@1.3.94)(@types/node@20.8.7)(eslint@8.52.0)(nx@17.0.1)(typescript@5.2.2)(verdaccio@5.27.0)
-      '@nx/devkit': 17.0.1(nx@17.0.1)
-      '@nx/eslint': 17.0.1(@swc-node/register@1.6.8)(@swc/core@1.3.94)(@types/node@20.8.7)(eslint@8.52.0)(nx@17.0.1)(verdaccio@5.27.0)
-      '@nx/js': 17.0.1(@swc-node/register@1.6.8)(@swc/core@1.3.94)(@types/node@20.8.7)(nx@17.0.1)(typescript@5.2.2)(verdaccio@5.27.0)
-      '@phenomnomnominal/tsquery': 5.0.1(typescript@5.2.2)
-      detect-port: 1.5.1
-      semver: 7.5.3
-      tslib: 2.6.2
-    transitivePeerDependencies:
-      - '@babel/traverse'
-      - '@swc-node/register'
-      - '@swc/core'
-      - '@swc/wasm'
-      - '@types/node'
-      - debug
-      - eslint
-      - nx
-      - supports-color
-      - typescript
-      - verdaccio
     dev: true
 
   /@nx/detox@17.0.1(@swc-node/register@1.6.8)(@swc/core@1.3.94)(@types/node@20.8.7)(detox@20.13.1)(eslint@8.52.0)(nx@17.0.1)(ts-node@10.9.1)(typescript@5.2.2)(verdaccio@5.27.0)(webpack@5.89.0):
@@ -8937,6 +8886,27 @@ packages:
       unpipe: 1.0.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /body-parser@1.20.2:
+    resolution: {integrity: sha512-ml9pReCu3M61kGlqoTm2umSXTlRTuGTx0bfYj+uIUKKYycG5NtSbeetV3faSU6R7ajOPw0g/J1PvK4qNy7s5bA==}
+    engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
+    dependencies:
+      bytes: 3.1.2
+      content-type: 1.0.5
+      debug: 2.6.9
+      depd: 2.0.0
+      destroy: 1.2.0
+      http-errors: 2.0.0
+      iconv-lite: 0.4.24
+      on-finished: 2.4.1
+      qs: 6.11.0
+      raw-body: 2.5.2
+      type-is: 1.6.18
+      unpipe: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
@@ -9119,7 +9089,7 @@ packages:
       promise-inflight: 1.0.1
       rimraf: 3.0.2
       ssri: 8.0.1
-      tar: 6.1.11
+      tar: 6.2.0
       unique-filename: 1.1.1
     transitivePeerDependencies:
       - bluebird
@@ -9139,7 +9109,7 @@ packages:
       minipass-pipeline: 1.2.4
       p-map: 4.0.0
       ssri: 10.0.5
-      tar: 6.1.11
+      tar: 6.2.0
       unique-filename: 3.0.0
     dev: true
 
@@ -9705,6 +9675,23 @@ packages:
       read-pkg-up: 3.0.0
     dev: true
 
+  /conventional-changelog-core@5.0.2:
+    resolution: {integrity: sha512-RhQOcDweXNWvlRwUDCpaqXzbZemKPKncCWZG50Alth72WITVd6nhVk9MJ6w1k9PFNBcZ3YwkdkChE+8+ZwtUug==}
+    engines: {node: '>=14'}
+    dependencies:
+      add-stream: 1.0.0
+      conventional-changelog-writer: 6.0.1
+      conventional-commits-parser: 4.0.0
+      dateformat: 3.0.3
+      get-pkg-repo: 4.2.1
+      git-raw-commits: 3.0.0
+      git-remote-origin-url: 2.0.0
+      git-semver-tags: 5.0.1
+      normalize-package-data: 3.0.3
+      read-pkg: 3.0.0
+      read-pkg-up: 3.0.0
+    dev: true
+
   /conventional-changelog-ember@3.0.0:
     resolution: {integrity: sha512-7PYthCoSxIS98vWhVcSphMYM322OxptpKAuHYdVspryI0ooLDehRXWeRWgN+zWSBXKl/pwdgAg8IpLNSM1/61A==}
     engines: {node: '>=14'}
@@ -9759,7 +9746,7 @@ packages:
       conventional-changelog-atom: 3.0.0
       conventional-changelog-codemirror: 3.0.0
       conventional-changelog-conventionalcommits: 6.1.0
-      conventional-changelog-core: 5.0.1
+      conventional-changelog-core: 5.0.2
       conventional-changelog-ember: 3.0.0
       conventional-changelog-eslint: 4.0.0
       conventional-changelog-express: 3.0.0
@@ -14856,7 +14843,7 @@ packages:
       redent: 3.0.0
       trim-newlines: 3.0.1
       type-fest: 0.18.1
-      yargs-parser: 20.2.4
+      yargs-parser: 20.2.9
     dev: true
 
   /merge-descriptors@1.0.1:
@@ -15932,7 +15919,6 @@ packages:
   /minipass@5.0.0:
     resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==}
     engines: {node: '>=8'}
-    dev: true
 
   /minipass@7.0.4:
     resolution: {integrity: sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==}
@@ -16188,7 +16174,7 @@ packages:
       npmlog: 6.0.2
       rimraf: 3.0.2
       semver: 7.5.4
-      tar: 6.1.11
+      tar: 6.2.0
       which: 2.0.2
     transitivePeerDependencies:
       - supports-color
@@ -16934,7 +16920,7 @@ packages:
       read-package-json-fast: 3.0.2
       sigstore: 1.9.0
       ssri: 10.0.5
-      tar: 6.1.11
+      tar: 6.2.0
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -17593,6 +17579,17 @@ packages:
       http-errors: 2.0.0
       iconv-lite: 0.4.24
       unpipe: 1.0.0
+    dev: true
+
+  /raw-body@2.5.2:
+    resolution: {integrity: sha512-8zGqypfENjCIqGhgXToC8aB2r7YrBX+AQAfIPs/Mlk+BtPTztOvTS01NRW/3Eh60J+a48lt8qsCzirQ6loCVfA==}
+    engines: {node: '>= 0.8'}
+    dependencies:
+      bytes: 3.1.2
+      http-errors: 2.0.0
+      iconv-lite: 0.4.24
+      unpipe: 1.0.0
+    dev: false
 
   /rc@1.2.8:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
@@ -18047,7 +18044,7 @@ packages:
       performance-now: 2.1.0
       qs: 6.5.3
       safe-buffer: 5.2.1
-      tough-cookie: 2.5.0
+      tough-cookie: 4.1.3
       tunnel-agent: 0.6.0
       uuid: 3.4.0
     dev: true
@@ -18220,6 +18217,13 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+
+  /rimraf@2.7.1:
+    resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    hasBin: true
+    dependencies:
+      glob: 7.2.3
+    dev: false
 
   /rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
@@ -19160,6 +19164,18 @@ packages:
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
+    dev: true
+
+  /tar@6.2.0:
+    resolution: {integrity: sha512-/Wo7DcT0u5HUV486xg675HtjNd3BXZ6xDbzsCUZPt5iw8bTQ63bP0Raut3mvro9u+CUyq7YQd8Cx55fsZXxqLQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      chownr: 2.0.0
+      fs-minipass: 2.1.0
+      minipass: 5.0.0
+      minizlib: 2.1.2
+      mkdirp: 1.0.4
+      yallist: 4.0.0
 
   /telnet-client@1.2.8:
     resolution: {integrity: sha512-W+w4k3QAmULVNhBVT2Fei369kGZCh/TH25M7caJAXW+hLxwoQRuw0di3cX4l0S9fgH3Mvq7u+IFMoBDpEw/eIg==}
@@ -19376,14 +19392,6 @@ packages:
   /totalist@3.0.1:
     resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
     engines: {node: '>=6'}
-    dev: true
-
-  /tough-cookie@2.5.0:
-    resolution: {integrity: sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==}
-    engines: {node: '>=0.8'}
-    dependencies:
-      psl: 1.9.0
-      punycode: 2.3.0
     dev: true
 
   /tough-cookie@4.1.3:
@@ -20642,6 +20650,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /yargs-parser@20.2.9:
+    resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
+    engines: {node: '>=10'}
+    dev: true
+
   /yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
@@ -20682,7 +20695,7 @@ packages:
       require-directory: 2.1.1
       string-width: 4.2.3
       y18n: 5.0.8
-      yargs-parser: 20.2.4
+      yargs-parser: 20.2.9
     dev: true
 
   /yargs@17.7.2:
