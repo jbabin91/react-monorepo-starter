@@ -22,6 +22,7 @@ on:
           - all
           - affected
           - web-theme
+          - mobile-theme
         default: 'all'
 
 jobs:
