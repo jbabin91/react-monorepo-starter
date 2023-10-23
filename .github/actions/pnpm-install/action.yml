@@ -10,6 +10,12 @@ runs:
       uses: actions/setup-node@v3
       with:
         node-version-file: .nvmrc
+        # This doesn't just set the registry url, but also sets
+        # the right configuration in .npmrc that reads NPM token
+        # from NPM_AUTH_TOKEN environment variable.
+        # It actually creates a .npmrc in a temporary folder
+        # and sets the NPM_CONFIG_USERCONFIG environment variable.
+        registry-url: https://registry.npmjs.org
     - name: Get PNPM store directory
       id: pnpm-cache
       shell: bash

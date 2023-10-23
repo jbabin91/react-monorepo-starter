@@ -1,0 +1,68 @@
+name: NPM Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      type:
+        required: true
+        type: choice
+        description: Release type
+        options:
+          - patch
+          - minor
+          - major
+          - previous
+        default: 'patch'
+
+      package:
+        required: true
+        type: choice
+        description: Package to release
+        options:
+          - all
+          - affected
+          - web-theme
+        default: 'all'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to create a GitHub issue
+      pull-requests: write # to be able to create a GitHub pull request
+      id-token: write # to be able to create a GitHub App installation access token
+    if: ${{ github.event.inputs.package }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # to be able to get the latest tag
+      - name: Setup git user
+        shell: bash
+        run: |
+          git config --global user.name '@react-monorepo-starter-bot'
+          git config --global user.email 'react-monorepo-starter@users.noreply.github.com'
+      - uses: nrwl/nx-set-shas@v4
+      - uses: ./.github/actions/pnpm-install
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: pnpm audit
+      - name: Release ${{ github.event.inputs.package }} package(s)
+        run: |
+          if [[ ${{ github.event.inputs.package }} == 'affected' ]]; then
+            pnpm nx affected -t version-publish --parallel=3 --exclude='*,!tag:package' -- --configuration=${{ inputs.type }} --push=true --baseBranch=${{ github.ref_name }}
+          elif [[ ${{ github.event.inputs.package }} == 'all' ]]; then
+            pnpm nx run-many -t version-publish --parallel=3 --exclude='*,!tag:package' -- --configuration=${{ inputs.type }} --push=true --baseBranch=${{ github.ref_name }}
+          else
+            pnpm nx run ${{ github.event.inputs.package }}:version-publish --configuration=${{ inputs.type }} --push=true --baseBranch=${{ github.ref_name }}
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          force: true
+          tags: true
