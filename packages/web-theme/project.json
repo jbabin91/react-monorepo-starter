@@ -22,29 +22,6 @@
       },
       "outputs": ["{options.outputFile}"]
     },
-    "release": {
-      "executor": "nx:run-commands",
-      "options": {
-        "commands": [
-          {
-            "command": "nx run web-theme:test",
-            "forwardAllArgs": false
-          },
-          {
-            "command": "nx run web-theme:build",
-            "forwardAllArgs": false
-          },
-          {
-            "command": "nx run web-theme:semantic-release",
-            "forwardAllArgs": false
-          }
-        ],
-        "parallel": false
-      }
-    },
-    "semantic-release": {
-      "executor": "@theunderscorer/nx-semantic-release:semantic-release"
-    },
     "test": {
       "executor": "@nx/vite:test",
       "options": {
