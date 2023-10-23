@@ -1,0 +1,83 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "mobile-theme",
+  "projectType": "library",
+  "sourceRoot": "packages/mobile-theme/src",
+  "tags": ["mobile", "ui", "theme", "package"],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/packages/mobile-theme"
+      },
+      "outputs": ["{options.outputPath}"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/mobile-theme/**/*.ts",
+          "packages/mobile-theme/package.json"
+        ]
+      },
+      "outputs": ["{options.outputFile}"]
+    },
+    "publish": {
+      "configurations": {
+        "local": {
+          "registry": "http://localhost:4873"
+        },
+        "previous": {
+          "tag": "previous"
+        }
+      },
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public"
+      }
+    },
+    "push-to-github": {
+      "executor": "@jscutlery/semver:github",
+      "options": {
+        "notes": "${notes}",
+        "tag": "${tag}"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/packages/mobile-theme"
+      },
+      "outputs": ["{options.reportsDirectory}"]
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {}
+    },
+    "version-publish": {
+      "configurations": {
+        "major": {
+          "releaseAs": "major"
+        },
+        "minor": {
+          "releaseAs": "minor"
+        },
+        "patch": {},
+        "previous": {
+          "postTargets": [
+            "mobile-theme:publish:previous",
+            "mobile-theme:push-to-github"
+          ]
+        }
+      },
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "noVerify": true,
+        "postTargets": ["mobile-theme:publish", "mobile-theme:push-to-github"],
+        "push": false,
+        "releaseAs": "patch"
+      }
+    }
+  }
+}

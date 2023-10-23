@@ -3,13 +3,24 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@expo/html-elements": "*",
+    "@gluestack-style/animation-resolver": "*",
+    "@gluestack-style/legend-motion-animation-driver": "*",
+    "@gluestack-style/react": "*",
+    "@gluestack-ui/config": "*",
+    "@gluestack-ui/themed": "*",
+    "@legendapp/motion": "*",
+    "@nx/vite": "*",
     "@react-native/metro-config": "*",
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
     "metro-config": "*",
     "react": "*",
+    "react-dom": "*",
     "react-native": "*",
     "react-native-svg": "*",
-    "react-native-svg-transformer": "*"
+    "react-native-svg-transformer": "*",
+    "vite": "*",
+    "vite-plugin-dts": "*"
   }
 }

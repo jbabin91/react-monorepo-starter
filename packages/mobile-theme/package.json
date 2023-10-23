@@ -1,0 +1,22 @@
+{
+  "name": "@jbabin91/mobile-theme",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbabin91/react-monorepo-starter.git#dev"
+  },
+  "license": "MIT",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "typings": "./index.d.ts",
+  "dependencies": {
+    "@expo/html-elements": "*",
+    "@gluestack-style/animation-resolver": "*",
+    "@gluestack-style/legend-motion-animation-driver": "*",
+    "@gluestack-style/react": "*",
+    "@gluestack-ui/themed": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -28,8 +28,7 @@ export default defineConfig({
     nxViteTsPaths(),
     dts({
       entryRoot: 'src',
-      skipDiagnostics: true,
-      tsConfigFilePath: path.join(__dirname, 'tsconfig.lib.json'),
+      tsconfigPath: path.join(__dirname, 'tsconfig.lib.json'),
     }),
   ],
   test: {

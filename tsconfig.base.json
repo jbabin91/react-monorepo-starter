@@ -8,13 +8,16 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2017",
+    "target": "ESNext",
     "module": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
+      "@jbabin91/mobile-theme": ["packages/mobile-theme/src/index.ts"],
       "@jbabin91/web-theme": ["packages/web-theme/src/index.ts"]
     }
   },
