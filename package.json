@@ -48,7 +48,7 @@
     "@gluestack-ui/config": "^1.0.3",
     "@gluestack-ui/themed": "^1.0.8",
     "@legendapp/motion": "^2.2.1",
-    "@mui/material": "^5.14.14",
+    "@mui/material": "^5.14.15",
     "@swc/helpers": "~0.5.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
