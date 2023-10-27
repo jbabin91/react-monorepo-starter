@@ -252,8 +252,8 @@ devDependencies:
     specifier: 0.77.0
     version: 0.77.0(@babel/core@7.23.2)
   metro-resolver:
-    specifier: 0.79.1
-    version: 0.79.1
+    specifier: 0.80.0
+    version: 0.80.0
   ngx-deploy-npm:
     specifier: ^7.0.1
     version: 7.0.1(@nx/devkit@17.0.2)(tslib@2.6.2)
