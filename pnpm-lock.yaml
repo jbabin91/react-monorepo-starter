@@ -243,8 +243,8 @@ devDependencies:
     specifier: 0.80.0
     version: 0.80.0
   metro-config:
-    specifier: 0.79.1
-    version: 0.79.1
+    specifier: 0.80.0
+    version: 0.80.0
   metro-react-native-babel-preset:
     specifier: 0.77.0
     version: 0.77.0(@babel/core@7.23.2)
