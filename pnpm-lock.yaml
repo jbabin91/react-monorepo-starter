@@ -23,10 +23,10 @@ dependencies:
     version: 1.0.11
   '@gluestack-ui/config':
     specifier: ^1.0.3
-    version: 1.0.3(@gluestack-style/react@1.0.11)(@gluestack-ui/themed@1.0.8)
+    version: 1.0.3(@gluestack-style/react@1.0.11)(@gluestack-ui/themed@1.0.10)
   '@gluestack-ui/themed':
-    specifier: ^1.0.8
-    version: 1.0.8(@gluestack-style/react@1.0.11)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
+    specifier: ^1.0.10
+    version: 1.0.10(@gluestack-style/react@1.0.11)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
   '@legendapp/motion':
     specifier: ^2.2.1
     version: 2.2.1(nativewind@2.0.11)(react-native@0.72.6)(react@18.2.0)
@@ -2817,24 +2817,24 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/config@1.0.1(@gluestack-style/react@1.0.11)(@gluestack-ui/themed@1.0.8):
+  /@gluestack-ui/config@1.0.1(@gluestack-style/react@1.0.11)(@gluestack-ui/themed@1.0.10):
     resolution: {integrity: sha512-QyrxfkYn8QPiYjefjgwaMNbo8ojL7k0838F3G96DDJbWsl6RBG8PjhT6DiAmRhDe7k4zzixKKlaRHFfXHEo3FA==}
     peerDependencies:
       '@gluestack-style/react': '>=0.2'
       '@gluestack-ui/themed': '>=0.1'
     dependencies:
       '@gluestack-style/react': 1.0.11
-      '@gluestack-ui/themed': 1.0.8(@gluestack-style/react@1.0.11)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
+      '@gluestack-ui/themed': 1.0.10(@gluestack-style/react@1.0.11)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
     dev: false
 
-  /@gluestack-ui/config@1.0.3(@gluestack-style/react@1.0.11)(@gluestack-ui/themed@1.0.8):
+  /@gluestack-ui/config@1.0.3(@gluestack-style/react@1.0.11)(@gluestack-ui/themed@1.0.10):
     resolution: {integrity: sha512-cP07ZOGDhwZKsTBdCUTa88O4KbRbAKArXyZcgTMZnoNJ5477psE9O9ClPd7xuPwJ/pLgh7NNCC1cAOMIpR0zpQ==}
     peerDependencies:
       '@gluestack-style/react': '>=1.0'
       '@gluestack-ui/themed': '>=1.0'
     dependencies:
       '@gluestack-style/react': 1.0.11
-      '@gluestack-ui/themed': 1.0.8(@gluestack-style/react@1.0.11)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
+      '@gluestack-ui/themed': 1.0.10(@gluestack-style/react@1.0.11)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
     dev: false
 
   /@gluestack-ui/divider@0.1.8(react-dom@18.2.0)(react@18.2.0):
@@ -2886,19 +2886,6 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@gluestack-ui/hstack@0.1.15(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0):
-    resolution: {integrity: sha512-HK7DUAKqMtBhtUdnurwd4U7dSnC2b/gLgc7erPYt8pZNqfv4fB18Dtqn6Ay96J5nTh/72ND9KqKH5DnCctpYTQ==}
-    peerDependencies:
-      react: '>=16'
-      react-dom: '>=16'
-    dependencies:
-      '@gluestack-ui/utils': 0.1.12(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    transitivePeerDependencies:
-      - react-native
-    dev: false
-
   /@gluestack-ui/icon@0.1.18(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0):
     resolution: {integrity: sha512-X35k3U2JHilpH24dPi5rxlniQWf+xIVLqhzHy4khLP08WZpBOzkKLTdnbmP76iArev5urXJtZtzs2eOJ8/Ow3A==}
     peerDependencies:
@@ -2929,8 +2916,8 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/input@0.1.21(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0):
-    resolution: {integrity: sha512-uqNozj5L8Op5j5ja4HncWL0VGomcMoldpXRpLTuO/BsQjwa9A8RehV84no/tEUA4BsP4y+mFmgLm8s6ZD7Vkzg==}
+  /@gluestack-ui/input@0.1.22(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0):
+    resolution: {integrity: sha512-9lz8l0glWNXqldp/9+ScyS8bbV0z1s32IltthbmdZfeuv1daHZvzJmaRJrvuQsMVGsu/d8oLwEg6tBlcWo5SCg==}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
@@ -3214,8 +3201,8 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/themed@1.0.8(@gluestack-style/react@1.0.11)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0):
-    resolution: {integrity: sha512-Qgxt4AFR4qs852o4j8uUGZz57zfyttc/vgwQZoeeu4MRod9Ng+XTum9HIJ8etvuae662tfYCVvWM3F4W+JQCKQ==}
+  /@gluestack-ui/themed@1.0.10(@gluestack-style/react@1.0.11)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0):
+    resolution: {integrity: sha512-hmjTpF2RdAfkE5fFFmsEyjIWxkAaYBlhuzXdjyTl6A9ADoFLTvEOAUjT2gqcNFzDvmYsg7a3QcMaoExhJPIwPg==}
     peerDependencies:
       '@gluestack-style/react': '>=1.0'
       '@types/react-native': '>=0.72'
@@ -3235,14 +3222,13 @@ packages:
       '@gluestack-ui/avatar': 0.1.15(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/button': 0.1.33(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/checkbox': 0.1.22(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
-      '@gluestack-ui/config': 1.0.1(@gluestack-style/react@1.0.11)(@gluestack-ui/themed@1.0.8)
+      '@gluestack-ui/config': 1.0.1(@gluestack-style/react@1.0.11)(@gluestack-ui/themed@1.0.10)
       '@gluestack-ui/divider': 0.1.8(react-dom@18.2.0)(react@18.2.0)
       '@gluestack-ui/fab': 0.1.17(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/form-control': 0.1.15(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
-      '@gluestack-ui/hstack': 0.1.15(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/icon': 0.1.18(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/image': 0.1.6(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
-      '@gluestack-ui/input': 0.1.21(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
+      '@gluestack-ui/input': 0.1.22(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/linear-gradient': 0.1.2(expo@49.0.16)(react-dom@18.2.0)(react@18.2.0)
       '@gluestack-ui/link': 0.1.15(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/menu': 0.2.25(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
@@ -3261,7 +3247,6 @@ packages:
       '@gluestack-ui/textarea': 0.1.18(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/toast': 0.1.20(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/tooltip': 0.1.24(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
-      '@gluestack-ui/vstack': 0.1.15(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@legendapp/motion': 2.2.1(nativewind@2.0.11)(react-native@0.72.6)(react@18.2.0)
       '@types/react-native': 0.72.5(react-native@0.72.6)
       react: 18.2.0
@@ -3332,19 +3317,6 @@ packages:
       react-dom: '>=16'
     dependencies:
       '@react-native-aria/focus': 0.2.9(react-native@0.72.6)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    transitivePeerDependencies:
-      - react-native
-    dev: false
-
-  /@gluestack-ui/vstack@0.1.15(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0):
-    resolution: {integrity: sha512-8wXSn+ijwbPU+3bZFhJbwsewzEinDeRtdghCGSxq+Qvvc1shJtn4BOPUQnISGg/dnz1PXHoKFDlJUW3wEpLbTg==}
-    peerDependencies:
-      react: '>=16'
-      react-dom: '>=16'
-    dependencies:
-      '@gluestack-ui/utils': 0.1.12(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
