@@ -123,8 +123,8 @@ devDependencies:
     specifier: ^1.39.0
     version: 1.39.0
   '@react-native-community/cli':
-    specifier: 11.3.9
-    version: 11.3.9(@babel/core@7.23.2)
+    specifier: 12.0.0
+    version: 12.0.0
   '@react-native-community/cli-platform-android':
     specifier: 11.3.9
     version: 11.3.9
@@ -5530,13 +5530,12 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-clean@11.3.9:
-    resolution: {integrity: sha512-naQ3wPYlxdJwQCp6TI4vG3LNvUuUQCi4/rYxAlwPO1tBI2Soy8PymyB2AAmt+fuG3DscsBnrEwAN9Z251p4Wdw==}
+  /@react-native-community/cli-clean@12.0.0:
+    resolution: {integrity: sha512-wpR3317b18vQNAlAl8xa/+DA+3tX7gJj04dw6MWun2c6vk7o/iRCpk/FVbLpGx20k97ASW5fQ9reB2KJ+Wv7zg==}
     dependencies:
-      '@react-native-community/cli-tools': 11.3.9
+      '@react-native-community/cli-tools': 12.0.0
       chalk: 4.1.2
       execa: 5.1.1
-      prompts: 2.4.2
     transitivePeerDependencies:
       - encoding
     dev: true
@@ -5553,10 +5552,10 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-config@11.3.9:
-    resolution: {integrity: sha512-kxwnnh6TEVz/x7Y4O3Cxi207lg0Rm2Tv7v8yEjxAzwx0Fv1h+drQjMq0fChBzKEcoge1404QL+zUYUdV3aUdkA==}
+  /@react-native-community/cli-config@12.0.0:
+    resolution: {integrity: sha512-xGkqD7VtcAiDhI6pLXigJqGrd9voGPl+eQAhOvWWr1eZN7FfHM+jLhDI+JLDa6b3SNbFJBCXgiBunB6v90giWw==}
     dependencies:
-      '@react-native-community/cli-tools': 11.3.9
+      '@react-native-community/cli-tools': 12.0.0
       chalk: 4.1.2
       cosmiconfig: 5.2.1
       deepmerge: 4.3.1
@@ -5573,8 +5572,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@react-native-community/cli-debugger-ui@11.3.9:
-    resolution: {integrity: sha512-0SqsPKECIsdOlsGi8sWd85PIrlzuDvde7mGH3WQeBXWzzkujDEyzopVg/fj6cRPK8a3KMkz9MLgsfZWOIuZO+g==}
+  /@react-native-community/cli-debugger-ui@12.0.0:
+    resolution: {integrity: sha512-gOid9bGi9dfGm+Ro89SFY9gZfrEk29MFn8wETgEGZ3K+/lelGzysfZmXyV0qk/N5nNurL3jOyhHRvLqU+XGOdQ==}
     dependencies:
       serve-static: 1.15.0
     transitivePeerDependencies:
@@ -5605,25 +5604,24 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-doctor@11.3.9:
-    resolution: {integrity: sha512-3Txsue28l6aY/jkvJ1E9B7LpdONZuJIZrVGK0+UKyQZH3pP2D3DzqG01K5yQek9msezRg4dhvw5moVk6hDIkiA==}
+  /@react-native-community/cli-doctor@12.0.0:
+    resolution: {integrity: sha512-dt38KoQiPCxs2E/RREwucpJHYXUcUIYbPZRvXm1qo71YvxfPSF4a3PM7u9nJw6Oba5F8lpinPpavgY4ykkoQLg==}
     dependencies:
-      '@react-native-community/cli-config': 11.3.9
-      '@react-native-community/cli-platform-android': 11.3.9
-      '@react-native-community/cli-platform-ios': 11.3.9
-      '@react-native-community/cli-tools': 11.3.9
+      '@react-native-community/cli-config': 12.0.0
+      '@react-native-community/cli-platform-android': 12.0.0
+      '@react-native-community/cli-platform-ios': 12.0.0
+      '@react-native-community/cli-tools': 12.0.0
       chalk: 4.1.2
       command-exists: 1.2.9
+      deepmerge: 4.3.1
       envinfo: 7.10.0
       execa: 5.1.1
       hermes-profile-transformer: 0.0.6
       ip: 1.1.8
       node-stream-zip: 1.15.0
       ora: 5.4.1
-      prompts: 2.4.2
       semver: 7.5.4
       strip-ansi: 5.2.0
-      sudo-prompt: 9.2.1
       wcwidth: 1.0.1
       yaml: 2.3.3
     transitivePeerDependencies:
@@ -5641,11 +5639,11 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-hermes@11.3.9:
-    resolution: {integrity: sha512-Kev1LAU3H2MXS2u3XUpE3DrcGpdHL5jIUY8kZZvvn3W9/8f/W19OMN/IzWckqcZDVJ39U0WlBK5gjlkDKo15Pg==}
+  /@react-native-community/cli-hermes@12.0.0:
+    resolution: {integrity: sha512-7W9bp0II83t9FvZ0UC+UwagBr1ySFWfb8gPfZwdpSRSAzTkrJjpLYjfFKs2uhLV63dzM8jyyE/voiQIWi2hnfA==}
     dependencies:
-      '@react-native-community/cli-platform-android': 11.3.9
-      '@react-native-community/cli-tools': 11.3.9
+      '@react-native-community/cli-platform-android': 12.0.0
+      '@react-native-community/cli-tools': 12.0.0
       chalk: 4.1.2
       hermes-profile-transformer: 0.0.6
       ip: 1.1.8
@@ -5670,6 +5668,19 @@ packages:
       '@react-native-community/cli-tools': 11.3.9
       chalk: 4.1.2
       execa: 5.1.1
+      glob: 7.2.3
+      logkitty: 0.7.1
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
+  /@react-native-community/cli-platform-android@12.0.0:
+    resolution: {integrity: sha512-QjQUh5it4TUwKZIn+T3xhU/IvrUrx1el535Ia6y940tyTxnZ5zQPZnd2JxRcOLiHtKSQL72VnD3yBMRjYtp1HA==}
+    dependencies:
+      '@react-native-community/cli-tools': 12.0.0
+      chalk: 4.1.2
+      execa: 5.1.1
+      fast-xml-parser: 4.3.2
       glob: 7.2.3
       logkitty: 0.7.1
     transitivePeerDependencies:
@@ -5701,6 +5712,19 @@ packages:
       - encoding
     dev: true
 
+  /@react-native-community/cli-platform-ios@12.0.0:
+    resolution: {integrity: sha512-4c4xH59CpebgZb6dV/uw3lO3gZOSNY2GL9VjYFTXAMQSAnibnWjd1UFwP89TJNTyr/joYIU+vLDZ6nehZ78WoQ==}
+    dependencies:
+      '@react-native-community/cli-tools': 12.0.0
+      chalk: 4.1.2
+      execa: 5.1.1
+      fast-xml-parser: 4.3.2
+      glob: 7.2.3
+      ora: 5.4.1
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
   /@react-native-community/cli-plugin-metro@11.3.7(@babel/core@7.23.2):
     resolution: {integrity: sha512-0WhgoBVGF1f9jXcuagQmtxpwpfP+2LbLZH4qMyo6OtYLWLG13n2uRep+8tdGzfNzl1bIuUTeE9yZSAdnf9LfYQ==}
     dependencies:
@@ -5722,26 +5746,8 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@react-native-community/cli-plugin-metro@11.3.9(@babel/core@7.23.2):
-    resolution: {integrity: sha512-8HThsHzLTYw6byXtv86GfaqXLmybpGRcCxAAPuXeAgexLcDVZouhettKXQHYSvDEk6d4DM2h8iQi1oXcpel6ug==}
-    dependencies:
-      '@react-native-community/cli-server-api': 11.3.9
-      '@react-native-community/cli-tools': 11.3.9
-      chalk: 4.1.2
-      execa: 5.1.1
-      metro: 0.76.8
-      metro-config: 0.76.8
-      metro-core: 0.76.8
-      metro-react-native-babel-transformer: 0.76.8(@babel/core@7.23.2)
-      metro-resolver: 0.76.8
-      metro-runtime: 0.76.8
-      readline: 1.3.0
-    transitivePeerDependencies:
-      - '@babel/core'
-      - bufferutil
-      - encoding
-      - supports-color
-      - utf-8-validate
+  /@react-native-community/cli-plugin-metro@12.0.0:
+    resolution: {integrity: sha512-4fQOg2mBHhGWsSHw5btyI1Qbe8owZ5Ul2Soyysl5XT3aLVuXn+EBurVuH8Zyvbl1T4k09dgj03ojnlPA8PlIOg==}
     dev: true
 
   /@react-native-community/cli-server-api@11.3.7:
@@ -5762,11 +5768,11 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@react-native-community/cli-server-api@11.3.9:
-    resolution: {integrity: sha512-mMep4SdIJ9891vAn03o9FlL8JhBmcrfI7RDtiZxzTkP/tpXICA2gv7BWnMOE8ZUVBxkQOcyj/rclwZkl0DCGZw==}
+  /@react-native-community/cli-server-api@12.0.0:
+    resolution: {integrity: sha512-ovHCG71oAsxl3/RNuxBFgqPNZT3aK2eM4o39VetmxQd/KsjKT7mXU02QdwLX53H31wA0Aex/xKwqOGAUBGLHfQ==}
     dependencies:
-      '@react-native-community/cli-debugger-ui': 11.3.9
-      '@react-native-community/cli-tools': 11.3.9
+      '@react-native-community/cli-debugger-ui': 12.0.0
+      '@react-native-community/cli-tools': 12.0.0
       compression: 1.7.4
       connect: 3.7.0
       errorhandler: 1.5.1
@@ -5812,13 +5818,30 @@ packages:
       - encoding
     dev: true
 
+  /@react-native-community/cli-tools@12.0.0:
+    resolution: {integrity: sha512-p5QN3UMoAKUTpVblKAf+tW3I+nX6wyPgaXYZ+K3H0vZNmbVim+eODFi32NH1XnvuvblVpakovmMrhnBpRnSAgg==}
+    dependencies:
+      appdirsjs: 1.2.7
+      chalk: 4.1.2
+      find-up: 5.0.0
+      mime: 2.6.0
+      node-fetch: 2.7.0
+      open: 6.4.0
+      ora: 5.4.1
+      semver: 7.5.4
+      shell-quote: 1.8.1
+      sudo-prompt: 9.2.1
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
   /@react-native-community/cli-types@11.3.7:
     resolution: {integrity: sha512-OhSr/TiDQkXjL5YOs8+hvGSB+HltLn5ZI0+A3DCiMsjUgTTsYh+Z63OtyMpNjrdCEFcg0MpfdU2uxstCS6Dc5g==}
     dependencies:
       joi: 17.11.0
 
-  /@react-native-community/cli-types@11.3.9:
-    resolution: {integrity: sha512-MSpFYCBoOymqJVyE2So4ag3q1WkbfvqJk+NoIB3uWIFHQkCUUMmK9MhIUDWnd8U5YDldu64sAjlgP1ckgqsY8A==}
+  /@react-native-community/cli-types@12.0.0:
+    resolution: {integrity: sha512-1HhPlVqP99qRx1cd4PzQHAdaAW6cSv6LsOz/r+BGTEzl1wZ507vplVDGWDNRX0Zu7nGYiMIGeFBJwz2wINKhiQ==}
     dependencies:
       joi: 17.11.0
     dev: true
@@ -5852,22 +5875,23 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@react-native-community/cli@11.3.9(@babel/core@7.23.2):
-    resolution: {integrity: sha512-28OszVGJ/E6dA/lrNt6itn2Re7H/o/J6nHd7h6S/CFrTZ4yynsjvLzW5qWccPFSaC/fE+cZM9erWKkpJai3tRQ==}
-    engines: {node: '>=16'}
+  /@react-native-community/cli@12.0.0:
+    resolution: {integrity: sha512-sSw0mPFuS24wHEulNq6hObkRzJbEhzWGb6SWwC59q0xnYztFfjg0M+f0B8EscW8OZ3Ky7vGFqF3IxFR62aP61Q==}
+    engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@react-native-community/cli-clean': 11.3.9
-      '@react-native-community/cli-config': 11.3.9
-      '@react-native-community/cli-debugger-ui': 11.3.9
-      '@react-native-community/cli-doctor': 11.3.9
-      '@react-native-community/cli-hermes': 11.3.9
-      '@react-native-community/cli-plugin-metro': 11.3.9(@babel/core@7.23.2)
-      '@react-native-community/cli-server-api': 11.3.9
-      '@react-native-community/cli-tools': 11.3.9
-      '@react-native-community/cli-types': 11.3.9
+      '@react-native-community/cli-clean': 12.0.0
+      '@react-native-community/cli-config': 12.0.0
+      '@react-native-community/cli-debugger-ui': 12.0.0
+      '@react-native-community/cli-doctor': 12.0.0
+      '@react-native-community/cli-hermes': 12.0.0
+      '@react-native-community/cli-plugin-metro': 12.0.0
+      '@react-native-community/cli-server-api': 12.0.0
+      '@react-native-community/cli-tools': 12.0.0
+      '@react-native-community/cli-types': 12.0.0
       chalk: 4.1.2
       commander: 9.5.0
+      deepmerge: 4.3.1
       execa: 5.1.1
       find-up: 4.1.0
       fs-extra: 8.1.0
@@ -5875,7 +5899,6 @@ packages:
       prompts: 2.4.2
       semver: 7.5.4
     transitivePeerDependencies:
-      - '@babel/core'
       - bufferutil
       - encoding
       - supports-color
