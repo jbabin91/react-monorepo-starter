@@ -48,7 +48,7 @@
     "@gluestack-ui/config": "^1.0.3",
     "@gluestack-ui/themed": "^1.0.10",
     "@legendapp/motion": "^2.2.1",
-    "@mui/material": "^5.14.15",
+    "@mui/material": "^5.14.16",
     "@swc/helpers": "~0.5.3",
     "date-fns": "^2.30.0",
     "date-fns-tz": "^2.0.0",
