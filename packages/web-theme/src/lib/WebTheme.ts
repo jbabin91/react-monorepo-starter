@@ -1,4 +1,4 @@
-import { lime, purple } from '@mui/material/colors';
+import { indigo, purple } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
 export function WebThemeTestFunction(): string {
@@ -14,7 +14,7 @@ export const webTheme = createTheme({
     },
   },
   palette: {
-    primary: lime,
+    primary: indigo,
     secondary: purple,
   },
 });

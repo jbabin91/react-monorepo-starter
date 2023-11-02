@@ -10,7 +10,8 @@
   "module": "./index.mjs",
   "typings": "./index.d.ts",
   "dependencies": {
-    "@mui/material": "*"
+    "@mui/material": "*",
+    "react": "*"
   },
   "publishConfig": {
     "access": "public"
