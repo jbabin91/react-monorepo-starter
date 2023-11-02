@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "affected": {
+    "defaultBase": "dev"
+  },
   "generators": {
     "@nx/react": {
       "application": {
@@ -29,6 +32,7 @@
     "sharedGlobals": []
   },
   "nxCloudAccessToken": "YmQxM2U1ZTItYzU3Zi00M2RkLWFjYjEtODBjYTg4ODc0MjVkfHJlYWQtd3JpdGU=",
+  "parallel": 1,
   "targetDefaults": {
     "build": {
       "cache": true,

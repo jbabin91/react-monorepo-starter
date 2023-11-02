@@ -483,7 +483,7 @@ export const gluestackUIConfig = createConfig({
       textDark100: '#E5E5E5',
       textDark200: '#DBDBDB',
       textDark300: '#D4D4D4',
-      textDark400: '#A3A3A3',
+      textDark400: '#fecaca',
       textDark50: '#F5F5F5',
       textDark500: '#8C8C8C',
       textDark600: '#737373',
