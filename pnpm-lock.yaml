@@ -135,8 +135,8 @@ devDependencies:
     specifier: ^0.74.0
     version: 0.74.0(eslint@8.53.0)(prettier@3.0.3)(typescript@5.2.2)
   '@react-native/gradle-plugin':
-    specifier: ^0.73.2
-    version: 0.73.2
+    specifier: ^0.73.3
+    version: 0.73.3
   '@react-native/metro-config':
     specifier: ^0.74.0
     version: 0.74.0(@babel/core@7.23.2)(@babel/preset-env@7.23.2)
@@ -6027,8 +6027,8 @@ packages:
   /@react-native/gradle-plugin@0.72.11:
     resolution: {integrity: sha512-P9iRnxiR2w7EHcZ0mJ+fmbPzMby77ZzV6y9sJI3lVLJzF7TLSdbwcQyD3lwMsiL+q5lKUHoZJS4sYmih+P2HXw==}
 
-  /@react-native/gradle-plugin@0.73.2:
-    resolution: {integrity: sha512-n3xSfRoNn6cXlkdLa10uSpcKHZBgCfGcMdt6jeAmHGzNsgECtGBkR9l+BUYvVcQFHieNDZrSPNOhu6h81OhejQ==}
+  /@react-native/gradle-plugin@0.73.3:
+    resolution: {integrity: sha512-0dbzN0RTCCTJetRCIMRHNqomfri0tBrNVgJHqRg/cxfSP/ePkzPnp5nhwLr+bCDRd4z8zDsQ+/+87P/77RRsZQ==}
     engines: {node: '>=18'}
     dev: true
 
