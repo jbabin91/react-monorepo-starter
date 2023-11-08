@@ -23,10 +23,10 @@ dependencies:
     version: 1.0.14
   '@gluestack-ui/config':
     specifier: ^1.0.3
-    version: 1.0.3(@gluestack-style/react@1.0.14)(@gluestack-ui/themed@1.0.11)
+    version: 1.0.3(@gluestack-style/react@1.0.14)(@gluestack-ui/themed@1.0.13)
   '@gluestack-ui/themed':
-    specifier: ^1.0.11
-    version: 1.0.11(@gluestack-style/react@1.0.14)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
+    specifier: ^1.0.13
+    version: 1.0.13(@gluestack-style/react@1.0.14)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
   '@legendapp/motion':
     specifier: ^2.2.1
     version: 2.2.1(nativewind@2.0.11)(react-native@0.72.6)(react@18.2.0)
@@ -2821,24 +2821,24 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/config@1.0.1(@gluestack-style/react@1.0.14)(@gluestack-ui/themed@1.0.11):
+  /@gluestack-ui/config@1.0.1(@gluestack-style/react@1.0.14)(@gluestack-ui/themed@1.0.13):
     resolution: {integrity: sha512-QyrxfkYn8QPiYjefjgwaMNbo8ojL7k0838F3G96DDJbWsl6RBG8PjhT6DiAmRhDe7k4zzixKKlaRHFfXHEo3FA==}
     peerDependencies:
       '@gluestack-style/react': '>=0.2'
       '@gluestack-ui/themed': '>=0.1'
     dependencies:
       '@gluestack-style/react': 1.0.14
-      '@gluestack-ui/themed': 1.0.11(@gluestack-style/react@1.0.14)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
+      '@gluestack-ui/themed': 1.0.13(@gluestack-style/react@1.0.14)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
     dev: false
 
-  /@gluestack-ui/config@1.0.3(@gluestack-style/react@1.0.14)(@gluestack-ui/themed@1.0.11):
+  /@gluestack-ui/config@1.0.3(@gluestack-style/react@1.0.14)(@gluestack-ui/themed@1.0.13):
     resolution: {integrity: sha512-cP07ZOGDhwZKsTBdCUTa88O4KbRbAKArXyZcgTMZnoNJ5477psE9O9ClPd7xuPwJ/pLgh7NNCC1cAOMIpR0zpQ==}
     peerDependencies:
       '@gluestack-style/react': '>=1.0'
       '@gluestack-ui/themed': '>=1.0'
     dependencies:
       '@gluestack-style/react': 1.0.14
-      '@gluestack-ui/themed': 1.0.11(@gluestack-style/react@1.0.14)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
+      '@gluestack-ui/themed': 1.0.13(@gluestack-style/react@1.0.14)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0)
     dev: false
 
   /@gluestack-ui/divider@0.1.8(react-dom@18.2.0)(react@18.2.0):
@@ -3212,8 +3212,8 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/themed@1.0.11(@gluestack-style/react@1.0.14)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0):
-    resolution: {integrity: sha512-iAuGIAD/6aYVMDwTlxl3t0giKXAqc+ix4VIv3XOc0ry2isZO5aE7mE+CHq2i9boE9F9RjzVrsAyeE85qH1Ssbg==}
+  /@gluestack-ui/themed@1.0.13(@gluestack-style/react@1.0.14)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.6)(react@18.2.0):
+    resolution: {integrity: sha512-2TWRlSoJKkVah9apN3s31u9czlk7tdmznM2/ap/mH5fozpmVY2/vQc1xwjFx/b+1Pe9GGV5smjrKHrPD8/+KDw==}
     peerDependencies:
       '@gluestack-style/react': '>=1.0'
       '@types/react-native': '>=0.72'
@@ -3233,7 +3233,7 @@ packages:
       '@gluestack-ui/avatar': 0.1.15(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/button': 0.1.33(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/checkbox': 0.1.22(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
-      '@gluestack-ui/config': 1.0.1(@gluestack-style/react@1.0.14)(@gluestack-ui/themed@1.0.11)
+      '@gluestack-ui/config': 1.0.1(@gluestack-style/react@1.0.14)(@gluestack-ui/themed@1.0.13)
       '@gluestack-ui/divider': 0.1.8(react-dom@18.2.0)(react@18.2.0)
       '@gluestack-ui/fab': 0.1.17(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
       '@gluestack-ui/form-control': 0.1.15(react-dom@18.2.0)(react-native@0.72.6)(react@18.2.0)
