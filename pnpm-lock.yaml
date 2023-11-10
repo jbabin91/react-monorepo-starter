@@ -243,8 +243,8 @@ devDependencies:
     specifier: 0.80.1
     version: 0.80.1
   metro-babel-register:
-    specifier: 0.80.0
-    version: 0.80.0
+    specifier: 0.80.1
+    version: 0.80.1
   metro-config:
     specifier: 0.80.0
     version: 0.80.0
@@ -9004,10 +9004,10 @@ packages:
     resolution: {integrity: sha512-BiTEG2Ro+O1spuheL5nB289y37FFmz0ISE6GjpNCG2JuA/WNcuEHSYw01+vN8quGf208sID3FnZFDwVyqX18YQ==}
     dev: true
 
-  /babel-plugin-syntax-hermes-parser@0.17.0:
-    resolution: {integrity: sha512-sYdVKubF925dghmVgfsxjNDDsYdzbqmLZZm+mO7ZxSgOgpO5ws4tpvc7UlzOTj7Yoc1kaNLNgm4Ebi491hsF1w==}
+  /babel-plugin-syntax-hermes-parser@0.17.1:
+    resolution: {integrity: sha512-I+BUmPsjlhM2OvFDTSLId457eOslfxmi4fxt5svoczarKi8y8LEH53VG24PTI8dfmiISrz1nc/tG4sqcv1tIGA==}
     dependencies:
-      hermes-parser: 0.17.0
+      hermes-parser: 0.17.1
     dev: true
 
   /babel-plugin-syntax-trailing-function-commas@7.0.0-beta.0:
@@ -15293,18 +15293,18 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /metro-babel-register@0.80.0:
-    resolution: {integrity: sha512-pxCNNS/PQ2Y6P9+Rhg9P3Gp7N8neuesNNgDneWkcz3LM1u6fxjhcKtNGPc+hX9Q4pRThJ24lB6/hv5PpnTtR+w==}
+  /metro-babel-register@0.80.1:
+    resolution: {integrity: sha512-890TGEbg+rqVE+aXqrD9MQA3FvVbV345EQTI0rlo8IIcBLI+yog8L4NU7vhDSkGevQEtarSz/A+/zq5eZORBPw==}
     engines: {node: '>=18'}
     dependencies:
       '@babel/core': 7.23.3
       '@babel/plugin-proposal-export-namespace-from': 7.18.9(@babel/core@7.23.3)
-      '@babel/plugin-transform-flow-strip-types': 7.22.5(@babel/core@7.23.3)
-      '@babel/plugin-transform-modules-commonjs': 7.23.0(@babel/core@7.23.3)
+      '@babel/plugin-transform-flow-strip-types': 7.23.3(@babel/core@7.23.3)
+      '@babel/plugin-transform-modules-commonjs': 7.23.3(@babel/core@7.23.3)
       '@babel/preset-typescript': 7.23.2(@babel/core@7.23.3)
       '@babel/register': 7.22.15(@babel/core@7.23.3)
       babel-plugin-replace-ts-export-assignment: 0.0.2
-      babel-plugin-syntax-hermes-parser: 0.17.0
+      babel-plugin-syntax-hermes-parser: 0.17.1
       babel-plugin-transform-flow-enums: 0.0.2(@babel/core@7.23.3)
       escape-string-regexp: 1.0.5
     transitivePeerDependencies:
@@ -15766,10 +15766,10 @@ packages:
       '@babel/plugin-transform-classes': 7.22.15(@babel/core@7.23.3)
       '@babel/plugin-transform-computed-properties': 7.22.5(@babel/core@7.23.3)
       '@babel/plugin-transform-destructuring': 7.23.0(@babel/core@7.23.3)
-      '@babel/plugin-transform-flow-strip-types': 7.22.5(@babel/core@7.23.3)
+      '@babel/plugin-transform-flow-strip-types': 7.23.3(@babel/core@7.23.3)
       '@babel/plugin-transform-function-name': 7.22.5(@babel/core@7.23.3)
       '@babel/plugin-transform-literals': 7.22.5(@babel/core@7.23.3)
-      '@babel/plugin-transform-modules-commonjs': 7.23.0(@babel/core@7.23.3)
+      '@babel/plugin-transform-modules-commonjs': 7.23.3(@babel/core@7.23.3)
       '@babel/plugin-transform-named-capturing-groups-regex': 7.22.5(@babel/core@7.23.3)
       '@babel/plugin-transform-parameters': 7.22.15(@babel/core@7.23.3)
       '@babel/plugin-transform-react-display-name': 7.22.5(@babel/core@7.23.3)
