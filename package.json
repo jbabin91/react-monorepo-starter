@@ -119,7 +119,7 @@
     "jsdom": "~22.1.0",
     "lerna": "^7.4.2",
     "lint-staged": "^15.0.2",
-    "metro": "0.80.0",
+    "metro": "0.80.1",
     "metro-babel-register": "0.80.0",
     "metro-config": "0.80.0",
     "metro-react-native-babel-preset": "0.77.0",
