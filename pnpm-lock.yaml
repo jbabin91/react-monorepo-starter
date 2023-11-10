@@ -255,8 +255,8 @@ devDependencies:
     specifier: 0.77.0
     version: 0.77.0(@babel/core@7.23.3)
   metro-resolver:
-    specifier: 0.80.0
-    version: 0.80.0
+    specifier: 0.80.1
+    version: 0.80.1
   ngx-deploy-npm:
     specifier: ^7.0.1
     version: 7.0.1(@nx/devkit@17.0.3)(tslib@2.6.2)
@@ -15839,11 +15839,6 @@ packages:
 
   /metro-resolver@0.79.1:
     resolution: {integrity: sha512-hiea5co7c5rhrdD5xYohBq2Sw20Ytzie71raIW9SsXKBKzsS0zAbrwNFW5z71lDUnp719vhobnDXJ+yE7Kq9Gg==}
-    engines: {node: '>=18'}
-    dev: true
-
-  /metro-resolver@0.80.0:
-    resolution: {integrity: sha512-w+8Npbc1G33jwtAg0vAtelhIAYr6nTh/podz2JDURgvyNzc2On8B0Oaav2kKWn4X9cTozZbY1vxMIWY7uXeYew==}
     engines: {node: '>=18'}
     dev: true
 

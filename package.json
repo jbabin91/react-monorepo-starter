@@ -124,7 +124,7 @@
     "metro-config": "0.80.1",
     "metro-react-native-babel-preset": "0.77.0",
     "metro-react-native-babel-transformer": "0.77.0",
-    "metro-resolver": "0.80.0",
+    "metro-resolver": "0.80.1",
     "ngx-deploy-npm": "^7.0.1",
     "nx": "17.0.3",
     "prettier": "^3.0.3",
