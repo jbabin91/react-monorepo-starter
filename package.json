@@ -79,7 +79,7 @@
     "@nx/react-native": "17.1.2",
     "@nx/vite": "17.1.2",
     "@nx/workspace": "17.1.2",
-    "@playwright/test": "^1.39.0",
+    "@playwright/test": "^1.40.0",
     "@react-native-community/cli": "12.0.0",
     "@react-native-community/cli-platform-android": "12.0.0",
     "@react-native-community/cli-platform-ios": "12.0.0",
