@@ -46,7 +46,7 @@
     "@expo/html-elements": "^0.5.1",
     "@gluestack-style/react": "^1.0.16",
     "@gluestack-ui/config": "^1.0.3",
-    "@gluestack-ui/themed": "^1.0.15",
+    "@gluestack-ui/themed": "^1.0.16",
     "@legendapp/motion": "^2.2.1",
     "@mui/material": "^5.14.18",
     "@swc/helpers": "~0.5.3",
