@@ -123,8 +123,8 @@ devDependencies:
     specifier: ^1.40.0
     version: 1.40.0
   '@react-native-community/cli':
-    specifier: 12.1.0
-    version: 12.1.0
+    specifier: 12.1.1
+    version: 12.1.1
   '@react-native-community/cli-platform-android':
     specifier: 12.1.0
     version: 12.1.0
@@ -2112,16 +2112,6 @@ packages:
       nx: 17.1.2(@swc-node/register@1.6.8)(@swc/core@1.3.96)
     dev: true
 
-  /@commitlint/config-validator@18.4.0:
-    resolution: {integrity: sha512-1y6qHMU3o4cYQSK+Y9EnmH6H1GRiwQGjnLIUOIKlekrmfc8MrMk1ByNmb8od4vK3qHJAaL/77/5n+1uyyIF5dA==}
-    engines: {node: '>=v18'}
-    requiresBuild: true
-    dependencies:
-      '@commitlint/types': 18.4.0
-      ajv: 8.12.0
-    dev: true
-    optional: true
-
   /@commitlint/config-validator@18.4.3:
     resolution: {integrity: sha512-FPZZmTJBARPCyef9ohRC9EANiQEKSWIdatx5OlgeHKu878dWwpyeFauVkhzuBRJFcCA4Uvz/FDtlDKs008IHcA==}
     engines: {node: '>=v18'}
@@ -2161,13 +2151,6 @@ packages:
       lodash.upperfirst: 4.3.1
     dev: true
 
-  /@commitlint/execute-rule@18.4.0:
-    resolution: {integrity: sha512-g013SWki6ZWhURBLOSXTaVQGWHdA0QlPJGiW4a+YpThezmJOemvc4LiKVpn13AjSKQ40QnmBqpBrxujOaSo+3A==}
-    engines: {node: '>=v18'}
-    requiresBuild: true
-    dev: true
-    optional: true
-
   /@commitlint/execute-rule@18.4.3:
     resolution: {integrity: sha512-t7FM4c+BdX9WWZCPrrbV5+0SWLgT3kCq7e7/GhHCreYifg3V8qyvO127HF796vyFql75n4TFF+5v1asOOWkV1Q==}
     engines: {node: '>=v18'}
@@ -2198,28 +2181,6 @@ packages:
       '@commitlint/rules': 18.4.3
       '@commitlint/types': 18.4.3
     dev: true
-
-  /@commitlint/load@18.4.2(typescript@5.2.2):
-    resolution: {integrity: sha512-CKmzXdF9XwZJoVijAqpUlV9qzZOkyiYni4KuSCtTZVAAVudi9H84cJ4FqZxSwEP9G21vmoJiNrW8G042AsduVg==}
-    engines: {node: '>=v18'}
-    requiresBuild: true
-    dependencies:
-      '@commitlint/config-validator': 18.4.0
-      '@commitlint/execute-rule': 18.4.0
-      '@commitlint/resolve-extends': 18.4.0
-      '@commitlint/types': 18.4.0
-      '@types/node': 18.18.8
-      chalk: 4.1.2
-      cosmiconfig: 8.3.6(typescript@5.2.2)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.18.8)(cosmiconfig@8.3.6)(typescript@5.2.2)
-      lodash.isplainobject: 4.0.6
-      lodash.merge: 4.6.2
-      lodash.uniq: 4.5.0
-      resolve-from: 5.0.0
-    transitivePeerDependencies:
-      - typescript
-    dev: true
-    optional: true
 
   /@commitlint/load@18.4.3(typescript@5.2.2):
     resolution: {integrity: sha512-v6j2WhvRQJrcJaj5D+EyES2WKTxPpxENmNpNG3Ww8MZGik3jWRXtph0QTzia5ZJyPh2ib5aC/6BIDymkUUM58Q==}
@@ -2266,20 +2227,6 @@ packages:
       minimist: 1.2.8
     dev: true
 
-  /@commitlint/resolve-extends@18.4.0:
-    resolution: {integrity: sha512-qhgU6ach+S6sJMD9NjCYiEycOObGhxzWQLQzqlScJCv9zkPs15Bg0ffLXTQ3z7ipXv46XEKYMnSJzjLRw2Tlkg==}
-    engines: {node: '>=v18'}
-    requiresBuild: true
-    dependencies:
-      '@commitlint/config-validator': 18.4.0
-      '@commitlint/types': 18.4.0
-      import-fresh: 3.3.0
-      lodash.mergewith: 4.6.2
-      resolve-from: 5.0.0
-      resolve-global: 1.0.0
-    dev: true
-    optional: true
-
   /@commitlint/resolve-extends@18.4.3:
     resolution: {integrity: sha512-30sk04LZWf8+SDgJrbJCjM90gTg2LxsD9cykCFeFu+JFHvBFq5ugzp2eO/DJGylAdVaqxej3c7eTSE64hR/lnw==}
     engines: {node: '>=v18'}
@@ -2314,15 +2261,6 @@ packages:
     dependencies:
       find-up: 5.0.0
     dev: true
-
-  /@commitlint/types@18.4.0:
-    resolution: {integrity: sha512-MKeaFxt0I9fhqUb2E+YIzX/gZtmkuodJET/XKiZIMvXUff8Ee4Ih86eLg+yAm2jf1pwGBmU02uNOp0y094w2Uw==}
-    engines: {node: '>=v18'}
-    requiresBuild: true
-    dependencies:
-      chalk: 4.1.2
-    dev: true
-    optional: true
 
   /@commitlint/types@18.4.3:
     resolution: {integrity: sha512-cvzx+vtY/I2hVBZHCLrpoh+sA0hfuzHwDc+BAFPimYLjJkpHnghQM+z8W/KyLGkygJh3BtI3xXXq+dKjnSWEmA==}
@@ -5880,10 +5818,10 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-clean@12.1.0:
-    resolution: {integrity: sha512-kpOxq68+LPVR4HfvakIurjHovrbpHiHbDgKcC3StwBuo3u8CzCgwePM4p8ydVrlr7EkwZjFGl2aYo25GfhdSjw==}
+  /@react-native-community/cli-clean@12.1.1:
+    resolution: {integrity: sha512-lbEQJ9xO8DmNbES7nFcGIQC0Q15e9q1zwKfkN2ty2eM93ZTFqYzOwsddlNoRN9FO7diakMWoWgielhcfcIeIrQ==}
     dependencies:
-      '@react-native-community/cli-tools': 12.1.0
+      '@react-native-community/cli-tools': 12.1.1
       chalk: 4.1.2
       execa: 5.1.1
     transitivePeerDependencies:
@@ -5902,10 +5840,10 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-config@12.1.0:
-    resolution: {integrity: sha512-6sBkUoe5rBNApy39ZGpT+/Ax19SsGVbkaNb7vGTTJhtxNtgdHgkLPOv5mypnqe9WxT7195J0BbQV5nWDOba/UQ==}
+  /@react-native-community/cli-config@12.1.1:
+    resolution: {integrity: sha512-og8/yH7ZNMBcRJOGaHcn9BLt1WJF3XvgBw8iYsByVSEN7yvzAbYZ+CvfN6EdObGOqendbnE4lN9CVyQYM9Ufsw==}
     dependencies:
-      '@react-native-community/cli-tools': 12.1.0
+      '@react-native-community/cli-tools': 12.1.1
       chalk: 4.1.2
       cosmiconfig: 5.2.1
       deepmerge: 4.3.1
@@ -5922,8 +5860,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@react-native-community/cli-debugger-ui@12.1.0:
-    resolution: {integrity: sha512-43qsTPTbeY9DQOZsAAFe57QOr3Q3diFY0Of8TTybK1cG63BmeKcHq/ebPFRS5sWZzYDCtNjzfSUxXVu3mkfA6w==}
+  /@react-native-community/cli-debugger-ui@12.1.1:
+    resolution: {integrity: sha512-q427jvbJ0WdDuS6HNdc3EbmUu/dX/+FWCcZI60xB7m1i/8p+LzmrsoR2yIJCricsAIV3hhiFOGfquZDgrbF27Q==}
     dependencies:
       serve-static: 1.15.0
     transitivePeerDependencies:
@@ -5954,13 +5892,13 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-doctor@12.1.0:
-    resolution: {integrity: sha512-B8Lsuf7bXWMSbdiTsAd47d2PqKw+Fk1rbogF9hE9jEFD075hEBMdaxe52/lCz3uoVZxUQgNzCmzLTc451uESew==}
+  /@react-native-community/cli-doctor@12.1.1:
+    resolution: {integrity: sha512-IUZJ/KUCuz+IzL9GdHUlIf6zF93XadxCBDPseUYb0ucIS+rEb3RmYC+IukYhUWwN3y4F/yxipYy3ytKrQ33AxA==}
     dependencies:
-      '@react-native-community/cli-config': 12.1.0
-      '@react-native-community/cli-platform-android': 12.1.0
-      '@react-native-community/cli-platform-ios': 12.1.0
-      '@react-native-community/cli-tools': 12.1.0
+      '@react-native-community/cli-config': 12.1.1
+      '@react-native-community/cli-platform-android': 12.1.1
+      '@react-native-community/cli-platform-ios': 12.1.1
+      '@react-native-community/cli-tools': 12.1.1
       chalk: 4.1.2
       command-exists: 1.2.9
       deepmerge: 4.3.1
@@ -5989,11 +5927,11 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-hermes@12.1.0:
-    resolution: {integrity: sha512-ICPLJXmLpcuE5thJ7BP5aUMEH5MvFruKO3slde+XnYr+l4eVy9+wyqahymknSO4Ibj6f8Hy1QJKFiTu+E8Hqqg==}
+  /@react-native-community/cli-hermes@12.1.1:
+    resolution: {integrity: sha512-J6yxQoZooFRT8+Dtz8Px/bwasQxnbxZZFAFQzOs3f6CAfXrcr/+JLVFZRWRv9XGfcuLdCHr22JUVPAnyEd48DA==}
     dependencies:
-      '@react-native-community/cli-platform-android': 12.1.0
-      '@react-native-community/cli-tools': 12.1.0
+      '@react-native-community/cli-platform-android': 12.1.1
+      '@react-native-community/cli-tools': 12.1.1
       chalk: 4.1.2
       hermes-profile-transformer: 0.0.6
       ip: 1.1.8
@@ -6016,6 +5954,19 @@ packages:
     resolution: {integrity: sha512-7rrYOsuFBRYSFZThmvi08DWQydqchJAzX+B4fxmr5r2rJDhjr6JFG36FgdltkqWx9g7TXWw0R0Cs0CaGdzkRqg==}
     dependencies:
       '@react-native-community/cli-tools': 12.1.0
+      chalk: 4.1.2
+      execa: 5.1.1
+      fast-xml-parser: 4.3.2
+      glob: 7.2.3
+      logkitty: 0.7.1
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
+  /@react-native-community/cli-platform-android@12.1.1:
+    resolution: {integrity: sha512-jnyc9y5cPltBo518pfVZ53dtKGDy02kkCkSIwv4ltaHYse7JyEFxFbzBn9lloWvbZ0iFHvEo1NN78YGPAlXSDw==}
+    dependencies:
+      '@react-native-community/cli-tools': 12.1.1
       chalk: 4.1.2
       execa: 5.1.1
       fast-xml-parser: 4.3.2
@@ -6050,6 +6001,19 @@ packages:
       - encoding
     dev: true
 
+  /@react-native-community/cli-platform-ios@12.1.1:
+    resolution: {integrity: sha512-RA2lvFrswwQRIhCV3hoIYZmLe9TkRegpAWimdubtMxRHiv7Eh2dC0VWWR5VdWy3ltbJzeiEpxCoH/EcrMfp9tg==}
+    dependencies:
+      '@react-native-community/cli-tools': 12.1.1
+      chalk: 4.1.2
+      execa: 5.1.1
+      fast-xml-parser: 4.3.2
+      glob: 7.2.3
+      ora: 5.4.1
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
   /@react-native-community/cli-plugin-metro@11.3.10(@babel/core@7.23.3):
     resolution: {integrity: sha512-ZYAc5Hc+QVqJgj1XFbpKnIPbSJ9xKcBnfQrRhR+jFyt2DWx85u4bbzY1GSVc/USs0UbSUXv4dqPbnmOJz52EYQ==}
     dependencies:
@@ -6071,8 +6035,8 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@react-native-community/cli-plugin-metro@12.1.0:
-    resolution: {integrity: sha512-+QeuTtYSH5Drg1OorV4jJDtFRRg5iKZsYfSF1noV17ciD/5dXrl0ShVBUbjasGruSMd4cUr8abSBw4ke0ushrw==}
+  /@react-native-community/cli-plugin-metro@12.1.1:
+    resolution: {integrity: sha512-HV+lW1mFSu6GL7du+0/tfq8/5jytKp+w3n4+MWzRkx5wXvUq3oJjzwe8y+ZvvCqkRPdsOiwFDgJrtPhvaZp+xA==}
     dev: true
 
   /@react-native-community/cli-server-api@11.3.10:
@@ -6093,11 +6057,11 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@react-native-community/cli-server-api@12.1.0:
-    resolution: {integrity: sha512-FHFMM2hxKxJeXMc6lzfMqlK0Qi4mtpzxy9BOxtXB0D6JxS+SV7xq2dEjoWahLiEdQRnW3w6dJwgEM8kOlEPWfg==}
+  /@react-native-community/cli-server-api@12.1.1:
+    resolution: {integrity: sha512-dUqqEmtEiCMyqFd6LF1UqH0WwXirK2tpU7YhyFsBbigBj3hPz2NmzghCe7DRIcC9iouU0guBxhgmiLtmUEPduQ==}
     dependencies:
-      '@react-native-community/cli-debugger-ui': 12.1.0
-      '@react-native-community/cli-tools': 12.1.0
+      '@react-native-community/cli-debugger-ui': 12.1.1
+      '@react-native-community/cli-tools': 12.1.1
       compression: 1.7.4
       connect: 3.7.0
       errorhandler: 1.5.1
@@ -6144,13 +6108,30 @@ packages:
       - encoding
     dev: true
 
+  /@react-native-community/cli-tools@12.1.1:
+    resolution: {integrity: sha512-c9vjDVojZnivGsLoVoTZsJjHnwBEI785yV8mgyKTVFx1sciK8lCsIj1Lke7jNpz7UAE1jW94nI7de2B1aQ9rbA==}
+    dependencies:
+      appdirsjs: 1.2.7
+      chalk: 4.1.2
+      find-up: 5.0.0
+      mime: 2.6.0
+      node-fetch: 2.7.0
+      open: 6.4.0
+      ora: 5.4.1
+      semver: 7.5.4
+      shell-quote: 1.8.1
+      sudo-prompt: 9.2.1
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
   /@react-native-community/cli-types@11.3.10:
     resolution: {integrity: sha512-0FHK/JE7bTn0x1y8Lk5m3RISDHIBQqWLltO2Mf7YQ6cAeKs8iNOJOeKaHJEY+ohjsOyCziw+XSC4cY57dQrwNA==}
     dependencies:
       joi: 17.11.0
 
-  /@react-native-community/cli-types@12.1.0:
-    resolution: {integrity: sha512-r8wlKyADxRxtPY72rZMHbxmuz9eRsI+Sb8S3b9TpvPD+MVy0SU890dwDkQlwyttoI52rLeF7TGpjRgG82L4Ljg==}
+  /@react-native-community/cli-types@12.1.1:
+    resolution: {integrity: sha512-B9lFEIc1/H2GjiyRCk6ISJNn06h5j0cWuokNm3FmeyGOoGIfm4XYUbnM6IpGlIDdQpTtUzZfNq8CL4CIJZXF0g==}
     dependencies:
       joi: 17.11.0
     dev: true
@@ -6184,20 +6165,20 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@react-native-community/cli@12.1.0:
-    resolution: {integrity: sha512-kQzmY+z1/WVh0wOcraTBliCyWreC7L1kVRkWYpKbg0FxmC+9T2OPHGtM6VtgSAguUqSSPazgaR2qgtzuNNtZgQ==}
+  /@react-native-community/cli@12.1.1:
+    resolution: {integrity: sha512-St/lyxQ//crrigfE2QCqmjDb0IH3S9nmolm0eqmCA1bB8WWUk5dpjTgQk6xxDxz+3YtMghDJkGZPK4AxDXT42g==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@react-native-community/cli-clean': 12.1.0
-      '@react-native-community/cli-config': 12.1.0
-      '@react-native-community/cli-debugger-ui': 12.1.0
-      '@react-native-community/cli-doctor': 12.1.0
-      '@react-native-community/cli-hermes': 12.1.0
-      '@react-native-community/cli-plugin-metro': 12.1.0
-      '@react-native-community/cli-server-api': 12.1.0
-      '@react-native-community/cli-tools': 12.1.0
-      '@react-native-community/cli-types': 12.1.0
+      '@react-native-community/cli-clean': 12.1.1
+      '@react-native-community/cli-config': 12.1.1
+      '@react-native-community/cli-debugger-ui': 12.1.1
+      '@react-native-community/cli-doctor': 12.1.1
+      '@react-native-community/cli-hermes': 12.1.1
+      '@react-native-community/cli-plugin-metro': 12.1.1
+      '@react-native-community/cli-server-api': 12.1.1
+      '@react-native-community/cli-tools': 12.1.1
+      '@react-native-community/cli-types': 12.1.1
       chalk: 4.1.2
       commander: 9.5.0
       deepmerge: 4.3.1
@@ -10619,7 +10600,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 18.4.2(typescript@5.2.2)
+      '@commitlint/load': 18.4.3(typescript@5.2.2)
     transitivePeerDependencies:
       - typescript
     dev: true
