@@ -135,8 +135,8 @@ devDependencies:
     specifier: ^0.74.0
     version: 0.74.0(eslint@8.54.0)(prettier@3.1.0)(typescript@5.3.2)
   '@react-native/gradle-plugin':
-    specifier: ^0.73.3
-    version: 0.73.3
+    specifier: ^0.73.4
+    version: 0.73.4
   '@react-native/metro-config':
     specifier: ^0.74.0
     version: 0.74.0(@babel/core@7.23.3)(@babel/preset-env@7.23.3)
@@ -4560,6 +4560,7 @@ packages:
       - '@swc/wasm'
       - '@types/node'
       - babel-plugin-macros
+      - bufferutil
       - debug
       - detox
       - encoding
@@ -4570,6 +4571,7 @@ packages:
       - supports-color
       - ts-node
       - typescript
+      - utf-8-validate
       - verdaccio
       - webpack
     dev: true
@@ -6215,8 +6217,8 @@ packages:
   /@react-native/gradle-plugin@0.72.11:
     resolution: {integrity: sha512-P9iRnxiR2w7EHcZ0mJ+fmbPzMby77ZzV6y9sJI3lVLJzF7TLSdbwcQyD3lwMsiL+q5lKUHoZJS4sYmih+P2HXw==}
 
-  /@react-native/gradle-plugin@0.73.3:
-    resolution: {integrity: sha512-0dbzN0RTCCTJetRCIMRHNqomfri0tBrNVgJHqRg/cxfSP/ePkzPnp5nhwLr+bCDRd4z8zDsQ+/+87P/77RRsZQ==}
+  /@react-native/gradle-plugin@0.73.4:
+    resolution: {integrity: sha512-PMDnbsZa+tD55Ug+W8CfqXiGoGneSSyrBZCMb5JfiB3AFST3Uj5e6lw8SgI/B6SKZF7lG0BhZ6YHZsRZ5MlXmg==}
     engines: {node: '>=18'}
     dev: true
 
