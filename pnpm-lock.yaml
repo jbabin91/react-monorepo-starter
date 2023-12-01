@@ -156,8 +156,8 @@ devDependencies:
     specifier: 14.1.2
     version: 14.1.2(react-dom@18.2.0)(react@18.2.0)
   '@testing-library/react-native':
-    specifier: ~12.4.0
-    version: 12.4.0(react-native@0.72.7)(react-test-renderer@18.2.0)(react@18.2.0)
+    specifier: ~12.4.1
+    version: 12.4.1(react-native@0.72.7)(react-test-renderer@18.2.0)(react@18.2.0)
   '@types/node':
     specifier: 20.10.1
     version: 20.10.1
@@ -7433,8 +7433,8 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-native@12.4.0(react-native@0.72.7)(react-test-renderer@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-FPc/0LPL+xoYxt10IUyYv19I9BRL6FtZ8EGzOvlyT7wXXARzryASQmz4pj2ZBtp5Xn43bYzpbNZO8kIWNv0rLA==}
+  /@testing-library/react-native@12.4.1(react-native@0.72.7)(react-test-renderer@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-HDHwGTJwBB9//Flv0HhApghFsUYZvaKTemXOs9PCMk6P8mUl4IJby8zAud8rq7bT/ZMnehgIak8QK+mJCH6+5Q==}
     peerDependencies:
       jest: '>=28.0.0'
       react: '>=16.8.0'
