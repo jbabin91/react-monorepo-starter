@@ -126,8 +126,8 @@ devDependencies:
     specifier: 12.2.0
     version: 12.2.0
   '@react-native-community/cli-platform-android':
-    specifier: 12.1.1
-    version: 12.1.1
+    specifier: 12.2.0
+    version: 12.2.0
   '@react-native-community/cli-platform-ios':
     specifier: 12.1.1
     version: 12.1.1
@@ -5947,19 +5947,6 @@ packages:
       logkitty: 0.7.1
     transitivePeerDependencies:
       - encoding
-
-  /@react-native-community/cli-platform-android@12.1.1:
-    resolution: {integrity: sha512-jnyc9y5cPltBo518pfVZ53dtKGDy02kkCkSIwv4ltaHYse7JyEFxFbzBn9lloWvbZ0iFHvEo1NN78YGPAlXSDw==}
-    dependencies:
-      '@react-native-community/cli-tools': 12.1.1
-      chalk: 4.1.2
-      execa: 5.1.1
-      fast-xml-parser: 4.3.2
-      glob: 7.2.3
-      logkitty: 0.7.1
-    transitivePeerDependencies:
-      - encoding
-    dev: true
 
   /@react-native-community/cli-platform-android@12.2.0:
     resolution: {integrity: sha512-FIYp5eqt1vADsKXzimANseAnsfk3X6WnoRpSwD0o0w+3LqiAN/3LFs8RZKO3TniHdfrLvz0MGm3jocoy1RxXSw==}
