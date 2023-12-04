@@ -118,7 +118,7 @@
     "jest-react-native": "18.0.0",
     "jsdom": "~23.0.1",
     "lerna": "^8.0.0",
-    "lint-staged": "^15.1.0",
+    "lint-staged": "^15.2.0",
     "metro": "0.80.1",
     "metro-babel-register": "0.80.1",
     "metro-config": "0.80.1",
