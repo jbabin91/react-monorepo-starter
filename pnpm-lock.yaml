@@ -23,10 +23,10 @@ dependencies:
     version: 1.0.22
   '@gluestack-ui/config':
     specifier: ^1.0.8
-    version: 1.0.8(@gluestack-style/react@1.0.22)(@gluestack-ui/themed@1.0.19)
+    version: 1.0.8(@gluestack-style/react@1.0.22)(@gluestack-ui/themed@1.0.24)
   '@gluestack-ui/themed':
-    specifier: ^1.0.19
-    version: 1.0.19(@gluestack-style/react@1.0.22)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.7)(react@18.2.0)
+    specifier: ^1.0.24
+    version: 1.0.24(@gluestack-style/react@1.0.22)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.7)(react@18.2.0)
   '@legendapp/motion':
     specifier: ^2.2.1
     version: 2.2.1(nativewind@2.0.11)(react-native@0.72.7)(react@18.2.0)
@@ -3118,8 +3118,25 @@ packages:
       normalize-css-color: 1.0.2
     dev: false
 
-  /@gluestack-ui/actionsheet@0.2.30(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0):
-    resolution: {integrity: sha512-+Bw8j+O3FOekdME53kWSaxuX8kssfQJjrWSr+v/OJGOYDGzZzEOZvZHwV1FO0HBFmR/rdcedzPdV9gQ38bh9Mg==}
+  /@gluestack-ui/accordion@0.0.2(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0):
+    resolution: {integrity: sha512-t9aTPgGPHVkfvIBpDm3NALfMNZKrkirG+R2ARHClyeAr+Ok8XslcAqup+g1apZUxJPhXCuEn2FCjVFW+1ROxzw==}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      '@gluestack-style/react': 1.0.22
+      '@gluestack-ui/utils': 0.1.12(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
+      '@react-native-aria/accordion': 0.0.2(react-native@0.72.7)(react@18.2.0)
+      '@react-native-aria/focus': 0.2.9(react-native@0.72.7)(react@18.2.0)
+      '@react-native-aria/interactions': 0.2.11(react-native@0.72.7)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - react-native
+    dev: false
+
+  /@gluestack-ui/actionsheet@0.2.31(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0):
+    resolution: {integrity: sha512-C25H/gJK0IJUaOHro0OuLfzTcWP4PfOyfpXD4k3TCZn4i5MD/yOStHv8Ocxx/pmpmr9k5jrzKcsSa8ZyAnV9Tw==}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
@@ -3215,14 +3232,14 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/config@1.0.8(@gluestack-style/react@1.0.22)(@gluestack-ui/themed@1.0.19):
+  /@gluestack-ui/config@1.0.8(@gluestack-style/react@1.0.22)(@gluestack-ui/themed@1.0.24):
     resolution: {integrity: sha512-vhlZRB5w6IOTTJDEtpE4d9zblM5A1ycoAzMFw+FoOvZoJYmWyRC+j/zh/h6TKrZZp8FX7S0KEpEAtBGiZp98hw==}
     peerDependencies:
       '@gluestack-style/react': '>=1.0'
       '@gluestack-ui/themed': '>=1.0.20'
     dependencies:
       '@gluestack-style/react': 1.0.22
-      '@gluestack-ui/themed': 1.0.19(@gluestack-style/react@1.0.22)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.7)(react@18.2.0)
+      '@gluestack-ui/themed': 1.0.24(@gluestack-style/react@1.0.22)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.7)(react@18.2.0)
     dev: false
 
   /@gluestack-ui/divider@0.1.8(react-dom@18.2.0)(react@18.2.0):
@@ -3519,8 +3536,8 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/slider@0.1.17(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0):
-    resolution: {integrity: sha512-7BiUcNmdErOG3NODbegEyYGpX3trvJ3FfUnwpWNeB/K8E3hZbEcXGNlrhEOBDmBhDuL9JXKgbb78WNTdBzDVcA==}
+  /@gluestack-ui/slider@0.1.18(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0):
+    resolution: {integrity: sha512-Q9brkJnH9hlUeVrXowcsPRuclpczemxgXa0gSqR14DpLeinOqJgRCobg3uFiWjXqOOTHGC2oNik68tI4itehAQ==}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
@@ -3530,7 +3547,7 @@ packages:
       '@gluestack-ui/utils': 0.1.12(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
       '@react-aria/visually-hidden': 3.8.6(react@18.2.0)
       '@react-native-aria/interactions': 0.2.11(react-native@0.72.7)(react@18.2.0)
-      '@react-native-aria/slider': 0.2.9(react-native@0.72.7)(react@18.2.0)
+      '@react-native-aria/slider': 0.2.10(react-native@0.72.7)(react@18.2.0)
       '@react-stately/slider': 3.4.4(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -3596,8 +3613,8 @@ packages:
       - react-native
     dev: false
 
-  /@gluestack-ui/themed@1.0.19(@gluestack-style/react@1.0.22)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.7)(react@18.2.0):
-    resolution: {integrity: sha512-3h/Loaibl7ypD7KKg8fhfSHyfYtQmUke8gKfgdkP4TIMssZDnF3YofzLTSSw+wk/69nmj9XKi9M7tT49bM89HQ==}
+  /@gluestack-ui/themed@1.0.24(@gluestack-style/react@1.0.22)(@types/react-native@0.72.5)(expo@49.0.16)(nativewind@2.0.11)(react-dom@18.2.0)(react-native-svg@13.4.0)(react-native-web@0.19.9)(react-native@0.72.7)(react@18.2.0):
+    resolution: {integrity: sha512-x69ZBqP8RCSWz39imjCk4EP5zvZff6AawZWVpRgzFz5JgC6H+pua4TRizLXfhZIk1Xyi2Fsxb+593AOKPYVwDA==}
     peerDependencies:
       '@gluestack-style/react': '>=1.0'
       '@types/react-native': '>=0.72'
@@ -3611,7 +3628,8 @@ packages:
       '@gluestack-style/animation-resolver': 1.0.2(@gluestack-style/react@1.0.22)
       '@gluestack-style/legend-motion-animation-driver': 1.0.2(@gluestack-style/react@1.0.22)(@legendapp/motion@2.2.1)
       '@gluestack-style/react': 1.0.22
-      '@gluestack-ui/actionsheet': 0.2.30(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
+      '@gluestack-ui/accordion': 0.0.2(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
+      '@gluestack-ui/actionsheet': 0.2.31(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
       '@gluestack-ui/alert': 0.1.12(react-dom@18.2.0)(react@18.2.0)
       '@gluestack-ui/alert-dialog': 0.1.23(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
       '@gluestack-ui/avatar': 0.1.15(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
@@ -3634,7 +3652,7 @@ packages:
       '@gluestack-ui/provider': 0.1.10(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
       '@gluestack-ui/radio': 0.1.23(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
       '@gluestack-ui/select': 0.1.20(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
-      '@gluestack-ui/slider': 0.1.17(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
+      '@gluestack-ui/slider': 0.1.18(@gluestack-style/react@1.0.22)(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
       '@gluestack-ui/spinner': 0.1.14(react-dom@18.2.0)(react@18.2.0)
       '@gluestack-ui/switch': 0.1.17(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
       '@gluestack-ui/tabs': 0.1.14(react-dom@18.2.0)(react-native@0.72.7)(react@18.2.0)
@@ -5651,6 +5669,16 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-native-aria/accordion@0.0.2(react-native@0.72.7)(react@18.2.0):
+    resolution: {integrity: sha512-2Wa/YDBc2aCunTLpqwxTfCwn1t63KSAIoXd0hqrUGJJF+N2bEs2Hqs9ZgyKJ/hzFxCknVPMqo0fEVE1H23Z5+g==}
+    peerDependencies:
+      react: '*'
+      react-native: '*'
+    dependencies:
+      react: 18.2.0
+      react-native: 0.72.7(@babel/core@7.23.5)(@babel/preset-env@7.23.5)(react@18.2.0)
+    dev: false
+
   /@react-native-aria/checkbox@0.2.6(react-native@0.72.7)(react@18.2.0):
     resolution: {integrity: sha512-is8riNMjLkdcpajcU928FwZMf6ZYmfT5+CEJH6NYmY/BoeYHri+w8UYqPIGi5+9//5nQAkpjopJx9Z7+jkEJlw==}
     peerDependencies:
@@ -5763,8 +5791,8 @@ packages:
       react-native: 0.72.7(@babel/core@7.23.5)(@babel/preset-env@7.23.5)(react@18.2.0)
     dev: false
 
-  /@react-native-aria/slider@0.2.9(react-native@0.72.7)(react@18.2.0):
-    resolution: {integrity: sha512-pyCiOy3L7SpzFHYsdGR054trfVMKizi/x10s5spzjXhMAEmYCuP5dEIo43DSz+ZieGGEk/cdvURxjVEwsgHznA==}
+  /@react-native-aria/slider@0.2.10(react-native@0.72.7)(react@18.2.0):
+    resolution: {integrity: sha512-flwv/kKHrYmUqgMRO81VsZUccs9tf6dd9Z8SAerkVVj8BrJfVQ/Tb9cABaNsWHxIMUgtfKn0cMQYxLeySjjisw==}
     peerDependencies:
       react: '*'
       react-native: '*'
