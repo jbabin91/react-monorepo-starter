@@ -44,7 +44,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@expo/html-elements": "^0.5.1",
-    "@gluestack-style/react": "^1.0.20",
+    "@gluestack-style/react": "^1.0.22",
     "@gluestack-ui/config": "^1.0.4",
     "@gluestack-ui/themed": "^1.0.19",
     "@legendapp/motion": "^2.2.1",
