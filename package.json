@@ -81,7 +81,7 @@
     "@nx/workspace": "17.2.0",
     "@playwright/test": "^1.40.1",
     "@react-native-community/cli": "13.0.1",
-    "@react-native-community/cli-platform-android": "13.0.0",
+    "@react-native-community/cli-platform-android": "13.0.1",
     "@react-native-community/cli-platform-ios": "13.0.0",
     "@react-native/eslint-config": "^0.74.0",
     "@react-native/gradle-plugin": "^0.73.4",
