@@ -129,8 +129,8 @@ devDependencies:
     specifier: 13.0.1
     version: 13.0.1
   '@react-native-community/cli-platform-ios':
-    specifier: 13.0.0
-    version: 13.0.0
+    specifier: 13.0.1
+    version: 13.0.1
   '@react-native/eslint-config':
     specifier: ^0.74.0
     version: 0.74.0(eslint@8.55.0)(prettier@3.1.1)(typescript@5.3.3)
@@ -5978,19 +5978,6 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@react-native-community/cli-platform-ios@13.0.0:
-    resolution: {integrity: sha512-x3fMunOlXbcw0zlRxwnvwSQMdQVnANqHlLDrd0neiLzf/dG094PqtCbyJSFmw+65+iViemnzfwGDmocrVPuiOA==}
-    dependencies:
-      '@react-native-community/cli-tools': 13.0.0
-      chalk: 4.1.2
-      execa: 5.1.1
-      fast-xml-parser: 4.3.2
-      glob: 7.2.3
-      ora: 5.4.1
-    transitivePeerDependencies:
-      - encoding
-    dev: true
-
   /@react-native-community/cli-platform-ios@13.0.1:
     resolution: {integrity: sha512-A4Wpl1QQlaX/I0zBMNxEakYXpNi8roemKrASaPs6svfq94kBdXUdzLk2+7R7iersUzF5U2uOoVLr20KgA/8BUw==}
     dependencies:
@@ -6063,23 +6050,6 @@ packages:
       sudo-prompt: 9.2.1
     transitivePeerDependencies:
       - encoding
-
-  /@react-native-community/cli-tools@13.0.0:
-    resolution: {integrity: sha512-3C/GiFpIJbbuWgH+4T63vmL7K1OjYIs62rbGJp+BW6BbCTZpgMMk3EMZz1fNctaNcj+95jqmnd01PYTE1s/sIA==}
-    dependencies:
-      appdirsjs: 1.2.7
-      chalk: 4.1.2
-      find-up: 5.0.0
-      mime: 2.6.0
-      node-fetch: 2.7.0
-      open: 6.4.0
-      ora: 5.4.1
-      semver: 7.5.4
-      shell-quote: 1.8.1
-      sudo-prompt: 9.2.1
-    transitivePeerDependencies:
-      - encoding
-    dev: true
 
   /@react-native-community/cli-tools@13.0.1:
     resolution: {integrity: sha512-Gb2KshycsxqdEFuIoTH9wWSgMi4NPCWbQKhVlrc54e//NNimDOQ6M91fueRqb7oir0iXPm/e0n8qf1Joc2AvEQ==}
